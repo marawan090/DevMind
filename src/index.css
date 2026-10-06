@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- DevMind design tokens ---- */
+  --color-ink: #0a0b0a;          /* primary background */
+  --color-ink-2: #0e100e;        /* nav / band surface */
+  --color-panel: #121512;        /* secondary surface */
+  --color-panel-2: #171a16;      /* raised surface */
+  --color-panel-3: #1d211c;      /* hover / inset raised */
+  --color-line: #21251f;         /* primary border */
+  --color-line-2: #292e27;       /* stronger border */
+  --color-fog: #edeee8;          /* primary text (warm white) */
+  --color-mute: #9aa096;         /* secondary text */
+  --color-dim: #676d64;          /* tertiary text / metadata */
+  --color-lime: #a3e635;         /* product accent */
+  --color-lime-deep: #79b52a;    /* accent hover */
+  --color-lime-ink: #131a07;     /* text on accent */
+  --color-amber: #e8b34b;        /* secondary signal */
+  --color-red: #e06c5d;          /* destructive / removal */
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --tracking-eyebrow: 0.14em;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-fog);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01" on, "cv11" on, "liga" on;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(163, 230, 53, 0.22);
+  color: #f4f7ec;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(163, 230, 53, 0.7);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* thin technical scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--color-ink); }
+::-webkit-scrollbar-thumb { background: #242823; border-radius: 6px; border: 2px solid var(--color-ink); }
+::-webkit-scrollbar-thumb:hover { background: #30362e; }
+
+/* ---------- shared utility classes ---------- */
+
+.font-mono { font-family: var(--font-mono); }
+
+/* Eyebrow / technical micro-label */
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+}
+
+/* faint blueprint grid (used sparingly) */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(237, 238, 232, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(237, 238, 232, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.bg-grid-fine {
+  background-image:
+    linear-gradient(to right, rgba(237, 238, 232, 0.028) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(237, 238, 232, 0.028) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* dotted hairline connector pattern */
+.bg-dots {
+  background-image: radial-gradient(rgba(237, 238, 232, 0.07) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+/* keyframes */
+@keyframes dm-pulse-dot {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+.anim-pulse-dot { animation: dm-pulse-dot 2.4s ease-in-out infinite; }
+
+@keyframes dm-caret {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.anim-caret { animation: dm-caret 1.1s steps(1) infinite; }
+
+@keyframes dm-scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(2200%); }
+}
+
+@keyframes dm-map-flow {
+  from { stroke-dashoffset: 22; }
+  to { stroke-dashoffset: 0; }
+}
+.anim-scan { animation: dm-scan 5.5s cubic-bezier(0.6, 0, 0.3, 1) infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .anim-pulse-dot, .anim-caret, .anim-scan { animation: none; }
+}
