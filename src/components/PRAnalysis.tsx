@@ -105,7 +105,7 @@ export function PRAnalysis() {
           </div>
           <div className="mx-auto flex h-6 w-full max-w-[420px] items-center justify-center gap-1.5 rounded-md border border-line bg-ink-2 px-3 font-mono text-[10.5px] text-dim">
             <Lock className="h-3 w-3" />
-            devmind.app/repo/web-app<span className="text-mute">/pull/142</span>
+            devvmind.me/repo/web-app<span className="text-mute">/pull/142</span>
           </div>
           <div className="hidden w-16 justify-end sm:flex">
             <kbd className="rounded border border-line-2 bg-panel-2 px-1.5 py-0.5 font-mono text-[9.5px] text-dim">⌘K</kbd>
@@ -118,8 +118,8 @@ export function PRAnalysis() {
             <div className="border-b border-line p-3">
               <div className="flex items-center justify-between rounded-md border border-line bg-panel-2 px-2.5 py-2">
                 <div className="flex items-center gap-2 overflow-hidden">
-                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-lime font-mono text-[10px] font-semibold text-lime-ink">D</span>
-                  <span className="truncate font-mono text-[11.5px] text-fog">devmind / web-app</span>
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-lime font-mono text-[10px] font-semibold text-lime-ink">d</span>
+                  <span className="truncate font-mono text-[11.5px] text-fog">devvmind / web-app</span>
                 </div>
                 <ChevronRight className="h-3 w-3 shrink-0 rotate-90 text-dim" />
               </div>
@@ -310,7 +310,7 @@ export function PRAnalysis() {
             <div className="flex items-center gap-4 border-t border-line bg-panel px-5 py-2.5 font-mono text-[10.5px] text-dim sm:px-6">
               <span className="flex items-center gap-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-lime anim-pulse-dot" />
-                DevMind context layer
+                devvmind context layer
               </span>
               <span className="hidden sm:inline">·</span>
               <span className="hidden sm:inline">Reasoning by Claude</span>

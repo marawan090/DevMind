@@ -4,7 +4,7 @@ import { cn } from "../utils/cn";
 
 const STACK = [
   {
-    name: "DevMind",
+    name: "devvmind",
     role: "Context + Retrieval + Analysis",
     tag: "product",
     accent: true,
@@ -18,7 +18,7 @@ const STACK = [
     icon: Waypoints,
   },
   {
-    name: "DevMind",
+    name: "devvmind",
     role: "Structured Engineering Insight",
     tag: "product",
     accent: true,
@@ -36,13 +36,13 @@ export function ClaudeRole() {
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-5 max-w-[20ch] text-balance text-[30px] font-semibold leading-[1.15] tracking-[-0.02em] text-fog sm:text-[36px]">
-              Reasoning powered by Claude. Context built by DevMind.
+              Reasoning powered by Claude. Context built by devvmind.
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-5 max-w-[56ch] text-[15.5px] leading-[1.75] text-mute">
-              DevMind combines repository analysis, dependency mapping, retrieval,
-              and Git history with Claude&rsquo;s reasoning capabilities. DevMind
+              devvmind combines repository analysis, dependency mapping, retrieval,
+              and Git history with Claude&rsquo;s reasoning capabilities. devvmind
               provides the engineering context; Claude helps synthesize it into
               clear, evidence-backed insights.
             </p>
@@ -50,7 +50,7 @@ export function ClaudeRole() {
           <Reveal delay={0.24}>
             <div className="mt-8 border-l-2 border-lime/50 pl-5">
               <p className="max-w-[52ch] text-[14px] leading-[1.7] text-mute">
-                The model is a component, not the product. DevMind owns everything
+                The model is a component, not the product. devvmind owns everything
                 that determines the quality of the answer — what gets analyzed,
                 what gets retrieved, and what gets cited.
               </p>
@@ -102,7 +102,7 @@ export function ClaudeRole() {
               </div>
             ))}
             <p className="mt-5 text-center font-mono text-[10.5px] leading-relaxed text-dim">
-              DevMind handles the pipeline before and after reasoning.
+              devvmind handles the pipeline before and after reasoning.
             </p>
           </div>
         </Reveal>

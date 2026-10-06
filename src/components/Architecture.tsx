@@ -32,7 +32,7 @@ const GROUPS: Group[] = [
     rows: [{ icon: GithubMark, title: "GitHub Repository", sub: "source of truth for the change" }],
   },
   {
-    rail: "DevMind — context layer",
+    rail: "devvmind — context layer",
     tone: "lime",
     rows: [
       { icon: ScanLine, title: "Repository Ingestion", sub: "files, modules, symbols" },
@@ -47,7 +47,7 @@ const GROUPS: Group[] = [
     rows: [{ text: "claude", title: "Claude Reasoning", sub: "over the retrieved context — nothing else" }],
   },
   {
-    rail: "DevMind — output",
+    rail: "devvmind — output",
     tone: "lime",
     rows: [{ icon: FileDiff, title: "Evidence-backed PR Analysis", sub: "impact, risk, reviewers, and cited sources", accent: true }],
   },
@@ -193,7 +193,7 @@ export function Architecture() {
             </Reveal>
             <Reveal delay={0.25}>
               <p className="mt-6 text-center text-[15px] text-mute">
-                <span className="font-semibold text-fog">DevMind builds the context.</span>{" "}
+                <span className="font-semibold text-fog">devvmind builds the context.</span>{" "}
                 <span className="font-semibold text-fog">Claude reasons over it.</span>
               </p>
             </Reveal>

@@ -19,7 +19,7 @@ const STAGES: Stage[] = [
     n: "01",
     icon: FolderSearch,
     title: "Code & Structure",
-    body: "DevMind maps the repository structure, code relationships, symbols, and import graphs.",
+    body: "devvmind maps the repository structure, code relationships, symbols, and import graphs.",
     chips: ["topology", "imports", "symbols"],
     note: "Full structural snapshot of the codebase",
   },
@@ -83,10 +83,10 @@ export function HowItWorks() {
     <section id="how-it-works" className="scroll-mt-16 border-b border-line bg-ink-2/40">
       <div className="mx-auto max-w-[1240px] px-5 py-24 sm:px-6 md:py-32">
         <SectionHead
-          eyebrow="How DevMind works"
+          eyebrow="How devvmind works"
           index="02"
           title="From repository context to actionable reasoning."
-          lede="Three stages, in strict order: DevMind maps the repository structure, retrieves relevant historical context, and synthesizes evidence-backed PR intelligence."
+          lede="Three stages, in strict order: devvmind maps the repository structure, retrieves relevant historical context, and synthesizes evidence-backed PR intelligence."
         />
 
         <div className="relative mt-14 grid gap-[56px] lg:grid-cols-3 lg:gap-[28px]">

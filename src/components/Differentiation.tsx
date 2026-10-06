@@ -64,7 +64,7 @@ export function Differentiation() {
       <div className="mx-auto grid max-w-[1240px] items-center gap-12 px-5 py-20 sm:px-6 md:py-28 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-20">
         <div>
           <Reveal>
-            <Eyebrow index="08">Why DevMind</Eyebrow>
+            <Eyebrow index="08">Why devvmind</Eyebrow>
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-5 max-w-[20ch] text-balance text-[30px] font-semibold leading-[1.15] tracking-[-0.02em] text-fog sm:text-[36px]">
@@ -73,7 +73,7 @@ export function Differentiation() {
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-5 max-w-[52ch] text-[15.5px] leading-[1.75] text-mute">
-              Most developer tools focus on the code being changed. DevMind
+              Most developer tools focus on the code being changed. devvmind
               connects that change to the surrounding codebase, dependency
               relationships, and engineering history before producing its analysis.
             </p>

@@ -200,7 +200,7 @@ function Impact({ scenario }: { scenario: Scenario }) {
         <div className="rounded-b-lg border-t border-lime/20 bg-lime/[0.05] px-4 py-3">
           <p className="flex gap-2 text-[12px] leading-relaxed text-mute">
             <ShieldAlert className="mt-0.5 h-3.5 w-3.5 shrink-0 text-lime" />
-            DevMind resolves the import graph, so indirect dependents are included —
+            devvmind resolves the import graph, so indirect dependents are included —
             not just files that mention the name.
           </p>
         </div>
@@ -229,7 +229,7 @@ export function BlastRadius() {
             eyebrow="Core capability · Blast radius"
             index="04"
             title="Before you change a file, see what depends on it."
-            lede="DevMind helps engineers understand the potential impact of a code change by connecting repository structure, dependencies, history, and context."
+            lede="devvmind helps engineers understand the potential impact of a code change by connecting repository structure, dependencies, history, and context."
           />
           <Reveal delay={0.2} className="lg:justify-self-end">
             <p className="max-w-[34ch] font-mono text-[11px] leading-relaxed text-dim lg:pb-1 lg:text-right">

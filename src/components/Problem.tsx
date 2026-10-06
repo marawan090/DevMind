@@ -23,8 +23,9 @@ export function Problem() {
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-6 max-w-[48ch] text-[16px] leading-[1.7] text-mute">
-              Pull requests rarely exist in isolation. Every change connects to
-              downstream dependencies, past architectural decisions, and repository history.
+              Pull requests rarely exist in isolation. When modifying code, engineers often lack
+              visibility into downstream dependencies, past architectural decisions, and repository history —
+              making it hard to know what might break before merging.
             </p>
           </Reveal>
         </div>

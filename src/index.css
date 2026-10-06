@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* ---- DevMind design tokens ---- */
+  /* ---- devvmind design tokens ---- */
   --color-ink: #0a0b0a;          /* primary background */
   --color-ink-2: #0e100e;        /* nav / band surface */
   --color-panel: #121512;        /* secondary surface */

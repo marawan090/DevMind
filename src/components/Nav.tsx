@@ -8,7 +8,7 @@ const LINKS = [
   { label: "How it works", href: "#how-it-works" },
   { label: "Blast radius", href: "#capabilities" },
   { label: "Architecture", href: "#architecture" },
-  { label: "Founders", href: "#founders" },
+  { label: "About", href: "#about" },
 ];
 
 export function Logo({ className }: { className?: string }) {
@@ -17,8 +17,8 @@ export function Logo({ className }: { className?: string }) {
       <span className="flex h-[22px] w-[22px] items-center justify-center rounded-[6px] bg-lime transition-colors group-hover:bg-[#b6ef52]">
         <Waypoints className="h-[13px] w-[13px] text-lime-ink" strokeWidth={2.5} />
       </span>
-      <span className="text-[15px] font-semibold tracking-[-0.01em] text-fog">
-        DevMind
+      <span className="text-[15px] font-semibold tracking-[-0.01em] text-fog lowercase">
+        devvmind
       </span>
     </a>
   );
@@ -72,7 +72,7 @@ export function Nav() {
             href="#product"
             className="inline-flex h-8 items-center gap-2 rounded-md bg-lime px-3.5 text-[13px] font-semibold text-lime-ink transition-colors hover:bg-[#b6ef52]"
           >
-            Explore DevMind
+            Explore devvmind
           </a>
         </div>
 
@@ -110,7 +110,7 @@ export function Nav() {
               onClick={() => setOpen(false)}
               className="inline-flex h-10 flex-1 items-center justify-center gap-2 rounded-md bg-lime text-[13.5px] font-semibold text-lime-ink"
             >
-              Explore DevMind
+              Explore devvmind
             </a>
           </div>
         </nav>

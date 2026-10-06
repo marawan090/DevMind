@@ -1,5 +1,4 @@
 import { Logo } from "./Nav";
-import { GithubMark } from "./icons";
 
 const COLS: { head: string; links: { label: string; href: string; external?: boolean }[] }[] = [
   {
@@ -15,8 +14,9 @@ const COLS: { head: string; links: { label: string; href: string; external?: boo
     head: "Explore",
     links: [
       { label: "How it works", href: "#how-it-works" },
-      { label: "Founders & Company", href: "#founders" },
-      { label: "View DevMind on GitHub", href: "https://github.com/ayaeid225-dev/devmind", external: true },
+      { label: "About & Company", href: "#about" },
+      { label: "GitHub", href: "https://github.com/ayaeid225-dev/devmind", external: true },
+      { label: "LinkedIn", href: "https://www.linkedin.com/company/devmindorg/", external: true },
     ],
   },
 ];
@@ -36,6 +36,15 @@ export function Footer() {
             </p>
             <div className="mt-6 space-y-2 font-mono text-[12px]">
               <div>
+                <span className="text-dim">Website: </span>
+                <a
+                  href="https://devvmind.me"
+                  className="text-mute hover:text-lime transition-colors underline decoration-line-2 underline-offset-4 hover:decoration-lime"
+                >
+                  devvmind.me
+                </a>
+              </div>
+              <div>
                 <span className="text-dim">Contact: </span>
                 <a
                   href="mailto:info@devvmind.me"
@@ -45,14 +54,34 @@ export function Footer() {
                 </a>
               </div>
               <div>
+                <span className="text-dim">Founder: </span>
+                <a
+                  href="mailto:marawan@devvmind.me"
+                  className="text-mute hover:text-lime transition-colors underline decoration-line-2 underline-offset-4 hover:decoration-lime"
+                >
+                  marawan@devvmind.me
+                </a>
+              </div>
+              <div>
                 <span className="text-dim">GitHub: </span>
                 <a
                   href="https://github.com/ayaeid225-dev/devmind"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-mute hover:text-lime transition-colors"
+                  className="text-mute hover:text-lime transition-colors underline decoration-line-2 underline-offset-4 hover:decoration-lime"
                 >
-                  View DevMind on GitHub
+                  GitHub
+                </a>
+              </div>
+              <div>
+                <span className="text-dim">LinkedIn: </span>
+                <a
+                  href="https://www.linkedin.com/company/devmindorg/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-mute hover:text-lime transition-colors underline decoration-line-2 underline-offset-4 hover:decoration-lime"
+                >
+                  LinkedIn
                 </a>
               </div>
             </div>
@@ -80,7 +109,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-line pt-6 sm:flex-row sm:items-center">
-          <p className="font-mono text-[11px] text-dim">© 2026 DevMind</p>
+          <p className="font-mono text-[11px] text-dim">© 2026 devvmind</p>
           <p className="font-mono text-[11px] text-dim">
             blast radius · repository context · engineering history
           </p>

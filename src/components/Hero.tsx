@@ -28,7 +28,7 @@ export function Hero() {
 
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-[54ch] text-[17px] leading-[1.7] text-mute sm:text-[18px]">
-              DevMind helps engineers understand repository structure, code relationships,
+              devvmind helps engineers understand repository structure, code relationships,
               history, and the potential impact of changes before modifying or merging code.
             </p>
           </Reveal>
@@ -36,7 +36,7 @@ export function Hero() {
           <Reveal delay={0.28}>
             <div className="mt-9 flex flex-wrap items-center gap-3.5">
               <PrimaryButton href="#product">
-                Explore DevMind
+                Explore devvmind
               </PrimaryButton>
               <SecondaryButton href="#how-it-works">
                 See How It Works
