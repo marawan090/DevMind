@@ -226,10 +226,10 @@ export function BlastRadius() {
       <div className="relative mx-auto max-w-[1240px] px-5 py-24 sm:px-6 md:py-32">
         <div className="grid gap-6 lg:grid-cols-2 lg:items-end">
           <SectionHead
-            eyebrow="Core wedge · Blast radius"
+            eyebrow="Core capability · Blast radius"
             index="04"
             title="Before you change a file, see what depends on it."
-            lede="PR blast-radius analysis that maps downstream imports, API routes, and UI surfaces — identifying affected components before a change is merged."
+            lede="DevMind helps engineers understand the potential impact of a code change by connecting repository structure, dependencies, history, and context."
           />
           <Reveal delay={0.2} className="lg:justify-self-end">
             <p className="max-w-[34ch] font-mono text-[11px] leading-relaxed text-dim lg:pb-1 lg:text-right">

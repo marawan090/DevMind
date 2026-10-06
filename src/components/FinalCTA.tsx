@@ -72,11 +72,11 @@ export function FinalCTA() {
                 <span aria-hidden="true" className="block h-1.5 w-1.5 bg-lime" />
                 <span className="label-mono text-mute">Repository Intelligence</span>
               </div>
-              <h2 className="mt-5 max-w-[18ch] text-balance text-[32px] font-semibold leading-[1.12] tracking-[-0.025em] text-fog sm:text-[42px]">
-                Understand the codebase before you change it.
+              <h2 className="mt-5 max-w-[20ch] text-balance text-[32px] font-semibold leading-[1.12] tracking-[-0.025em] text-fog sm:text-[42px]">
+                Understand your codebase before you change it.
               </h2>
               <p className="mt-5 max-w-[46ch] text-[15.5px] leading-[1.7] text-mute">
-                See how DevMind maps dependencies, Git history, and PR blast radius to give engineering teams complete codebase context.
+                Explore how DevMind connects code, context, history, and impact.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <PrimaryButton href="#top" className="h-11 px-5 text-[14px]">

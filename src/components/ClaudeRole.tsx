@@ -19,7 +19,7 @@ const STACK = [
   },
   {
     name: "DevMind",
-    role: "Structured PR Insight",
+    role: "Structured Engineering Insight",
     tag: "product",
     accent: true,
     icon: FileDiff,

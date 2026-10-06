@@ -9,6 +9,7 @@ import { History } from "./components/History";
 import { Reviewers } from "./components/Reviewers";
 import { ClaudeRole } from "./components/ClaudeRole";
 import { Differentiation } from "./components/Differentiation";
+import { Founders } from "./components/Founders";
 import { FinalCTA } from "./components/FinalCTA";
 import { Footer } from "./components/Footer";
 
@@ -27,6 +28,7 @@ export default function App() {
           <Reviewers />
           <ClaudeRole />
           <Differentiation />
+          <Founders />
           <FinalCTA />
         </main>
         <Footer />

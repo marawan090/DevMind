@@ -16,7 +16,7 @@ export function Hero() {
           <Reveal>
             <div className="flex items-center gap-3">
               <span aria-hidden="true" className="block h-1.5 w-1.5 bg-lime" />
-              <span className="label-mono text-mute">Developer intelligence</span>
+              <span className="label-mono text-mute">Developer intelligence for modern codebases</span>
             </div>
           </Reveal>
 
@@ -27,9 +27,9 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={0.2}>
-            <p className="mt-6 max-w-[50ch] text-[17px] leading-[1.7] text-mute sm:text-[18px]">
-              DevMind maps code relationships, Git history, and downstream impact—giving
-              engineering teams clear context before any change is merged.
+            <p className="mt-6 max-w-[54ch] text-[17px] leading-[1.7] text-mute sm:text-[18px]">
+              DevMind helps engineers understand repository structure, code relationships,
+              history, and the potential impact of changes before modifying or merging code.
             </p>
           </Reveal>
 

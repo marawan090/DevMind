@@ -8,6 +8,7 @@ const LINKS = [
   { label: "How it works", href: "#how-it-works" },
   { label: "Blast radius", href: "#capabilities" },
   { label: "Architecture", href: "#architecture" },
+  { label: "Founders", href: "#founders" },
 ];
 
 export function Logo({ className }: { className?: string }) {
@@ -59,7 +60,7 @@ export function Nav() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href="https://github.com"
+            href="https://github.com/ayaeid225-dev/devmind"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 rounded-md px-3 py-1.5 text-[13.5px] font-medium text-mute transition-colors hover:bg-panel-2 hover:text-fog"
