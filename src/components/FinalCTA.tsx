@@ -76,7 +76,7 @@ export function FinalCTA() {
                 Understand your codebase before you change it.
               </h2>
               <p className="mt-5 max-w-[46ch] text-[15.5px] leading-[1.7] text-mute">
-                Explore how devvmind connects code, context, history, and impact.
+                Explore how devvmind connects code, context, history, and reasoning.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <PrimaryButton href="#top" className="h-11 px-5 text-[14px]">
@@ -92,7 +92,7 @@ export function FinalCTA() {
                 </a>
               </div>
               <p className="mt-6 font-mono text-[11px] text-dim">
-                Code · Context · Impact
+                Repository · Context · Reasoning Layer · Impact
               </p>
             </div>
           </div>

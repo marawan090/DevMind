@@ -34,12 +34,12 @@ const STAGES: Stage[] = [
   {
     n: "03",
     icon: Waypoints,
-    title: "Impact Synthesis",
-    body: "Claude reasons over the assembled context to produce structured, evidence-backed PR intelligence.",
+    title: "Reasoning Layer",
+    body: "The reasoning layer synthesizes the assembled context into structured, evidence-backed PR intelligence — evaluated with Claude.",
     chips: ["blast radius", "reviewers", "citations"],
-    note: "Every insight cites the exact files and commits it came from",
+    note: "devvmind provides the evidence; the reasoning model interprets it",
     accent: true,
-    tag: "claude",
+    tag: "target: claude",
   },
 ];
 
@@ -86,7 +86,7 @@ export function HowItWorks() {
           eyebrow="How devvmind works"
           index="02"
           title="From repository context to actionable reasoning."
-          lede="Three stages, in strict order: devvmind maps the repository structure, retrieves relevant historical context, and synthesizes evidence-backed PR intelligence."
+          lede="Three stages, in strict order: devvmind maps repository structure, retrieves verified engineering context, and synthesizes evidence-backed pull request insights."
         />
 
         <div className="relative mt-14 grid gap-[56px] lg:grid-cols-3 lg:gap-[28px]">

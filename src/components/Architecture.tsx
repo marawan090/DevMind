@@ -42,9 +42,9 @@ const GROUPS: Group[] = [
     ],
   },
   {
-    rail: "Claude — reasoning",
+    rail: "reasoning layer — evaluating Claude",
     tone: "neutral",
-    rows: [{ text: "claude", title: "Claude Reasoning", sub: "over the retrieved context — nothing else" }],
+    rows: [{ text: "reasoning", title: "Reasoning & Synthesis Layer", sub: "reasons across retrieved context — evaluating Claude" }],
   },
   {
     rail: "devvmind — output",
@@ -175,7 +175,7 @@ export function Architecture() {
               eyebrow="Architecture"
               index="03"
               title="The pipeline behind every analysis."
-              lede="Each pull request runs the same deterministic path: ingest, analyze, gather history, retrieve context — then reason over exactly what was retrieved."
+              lede="Each pull request follows a structured pipeline: devvmind extracts code structure, dependencies, and Git history into verified context, which is then synthesized by the reasoning layer into actionable insights."
             />
             <Reveal delay={0.24}>
               <p className="mt-6 border-t border-line pt-5 font-mono text-[11px] leading-relaxed text-dim">
@@ -193,8 +193,8 @@ export function Architecture() {
             </Reveal>
             <Reveal delay={0.25}>
               <p className="mt-6 text-center text-[15px] text-mute">
-                <span className="font-semibold text-fog">devvmind builds the context.</span>{" "}
-                <span className="font-semibold text-fog">Claude reasons over it.</span>
+                <span className="font-semibold text-fog">devvmind builds the engineering context.</span>{" "}
+                <span className="font-semibold text-lime">The reasoning layer interprets that context into actionable insights.</span>
               </p>
             </Reveal>
           </div>

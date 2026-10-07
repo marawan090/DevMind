@@ -14,9 +14,11 @@ export function Hero() {
       <div className="relative mx-auto max-w-[1240px] px-5 sm:px-6">
         <div className="pb-16 pt-18 sm:pt-24 md:pb-20 lg:max-w-[840px]">
           <Reveal>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <span aria-hidden="true" className="block h-1.5 w-1.5 bg-lime" />
               <span className="label-mono text-mute">Developer intelligence for modern codebases</span>
+              <span className="hidden font-mono text-[11px] text-dim sm:inline">·</span>
+              <span className="hidden font-mono text-[11px] text-dim sm:inline">Context by devvmind · Reasoning layer</span>
             </div>
           </Reveal>
 
@@ -29,7 +31,8 @@ export function Hero() {
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-[54ch] text-[17px] leading-[1.7] text-mute sm:text-[18px]">
               devvmind helps engineers understand repository structure, code relationships,
-              history, and the potential impact of changes before modifying or merging code.
+              history, and the potential impact of changes — combining deep codebase context
+              with advanced model reasoning before modifying or merging code.
             </p>
           </Reveal>
 

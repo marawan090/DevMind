@@ -4,23 +4,23 @@ import { cn } from "../utils/cn";
 
 const STACK = [
   {
-    name: "devvmind",
-    role: "Context + Retrieval + Analysis",
-    tag: "product",
+    name: "devvmind Context Layer",
+    role: "Repository Structure · Static Analysis · Git History",
+    tag: "evidence",
     accent: true,
     icon: Layers,
   },
   {
-    name: "Claude",
-    role: "Reasoning + Synthesis",
-    tag: "model",
+    name: "Reasoning Layer (Target: Claude)",
+    role: "Contextual Reasoning & Synthesis",
+    tag: "intended model",
     accent: false,
     icon: Waypoints,
   },
   {
-    name: "devvmind",
-    role: "Structured Engineering Insight",
-    tag: "product",
+    name: "devvmind Engineering Insight",
+    role: "Structured Impact, Risk, & Review Guidance",
+    tag: "output",
     accent: true,
     icon: FileDiff,
   },
@@ -36,23 +36,29 @@ export function ClaudeRole() {
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-5 max-w-[20ch] text-balance text-[30px] font-semibold leading-[1.15] tracking-[-0.02em] text-fog sm:text-[36px]">
-              Reasoning powered by Claude. Context built by devvmind.
+              Engineering context, reasoned with Claude.
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
-            <p className="mt-5 max-w-[56ch] text-[15.5px] leading-[1.75] text-mute">
-              devvmind combines repository analysis, dependency mapping, retrieval,
-              and Git history with Claude&rsquo;s reasoning capabilities. devvmind
-              provides the engineering context; Claude helps synthesize it into
-              clear, evidence-backed insights.
-            </p>
+            <div className="mt-5 space-y-3.5 max-w-[56ch] text-[15.5px] leading-[1.75] text-mute">
+              <p>
+                devvmind is currently prototyping its reasoning layer with open-source models
+                while evaluating Claude as the intended reasoning and synthesis layer for
+                repository-scale code intelligence.
+              </p>
+              <p className="text-[14.5px]">
+                The architecture is model-agnostic. devvmind itself builds and owns the engineering
+                context — including repository structure, static code analysis, dependency relationships,
+                deterministic retrieval, Git history, and code-change diffs.
+              </p>
+            </div>
           </Reveal>
           <Reveal delay={0.24}>
             <div className="mt-8 border-l-2 border-lime/50 pl-5">
               <p className="max-w-[52ch] text-[14px] leading-[1.7] text-mute">
-                The model is a component, not the product. devvmind owns everything
-                that determines the quality of the answer — what gets analyzed,
-                what gets retrieved, and what gets cited.
+                devvmind builds the engineering context. The reasoning layer interprets that context.
+                Rather than generating generic text, the model operates strictly over verified repository
+                facts, dependency paths, and code history to evaluate the true impact of changes.
               </p>
             </div>
           </Reveal>
@@ -102,7 +108,7 @@ export function ClaudeRole() {
               </div>
             ))}
             <p className="mt-5 text-center font-mono text-[10.5px] leading-relaxed text-dim">
-              devvmind handles the pipeline before and after reasoning.
+              devvmind builds the context · Planned reasoning layer evaluated with Claude
             </p>
           </div>
         </Reveal>

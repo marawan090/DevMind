@@ -48,7 +48,7 @@ function DiffPanel({ withContext }: { withContext?: boolean }) {
           {[
             "→ imported by api/user.ts · app/dashboard.tsx",
             "→ last changed in a1e0d4c · related PR #87",
-            "→ reviewers with context: Ahmed · Sarah",
+            "→ reasoning synthesis: breaking session rotation scope",
           ].map((l) => (
             <div key={l} className="font-mono text-[10.5px] text-mute">{l}</div>
           ))}
@@ -64,18 +64,19 @@ export function Differentiation() {
       <div className="mx-auto grid max-w-[1240px] items-center gap-12 px-5 py-20 sm:px-6 md:py-28 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-20">
         <div>
           <Reveal>
-            <Eyebrow index="08">Why devvmind</Eyebrow>
+            <Eyebrow index="08">Code + Context</Eyebrow>
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-5 max-w-[20ch] text-balance text-[30px] font-semibold leading-[1.15] tracking-[-0.02em] text-fog sm:text-[36px]">
-              Code changes don&rsquo;t happen in isolation.
+              Code tells you what exists. Context tells you how it fits.
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-5 max-w-[52ch] text-[15.5px] leading-[1.75] text-mute">
-              Most developer tools focus on the code being changed. devvmind
-              connects that change to the surrounding codebase, dependency
-              relationships, and engineering history before producing its analysis.
+              Raw code alone is insufficient to understand impact. devvmind gathers the surrounding
+              engineering context — dependencies, Git history, and past architectural decisions — providing
+              the evidence required for the reasoning layer to synthesize an understandable
+              engineering explanation before code merges.
             </p>
           </Reveal>
         </div>

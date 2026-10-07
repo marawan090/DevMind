@@ -56,6 +56,15 @@ export function Footer() {
               <div>
                 <span className="text-dim">Founder: </span>
                 <a
+                  href="mailto:aya@devvmind.me"
+                  className="text-mute hover:text-lime transition-colors underline decoration-line-2 underline-offset-4 hover:decoration-lime"
+                >
+                  aya@devvmind.me
+                </a>
+              </div>
+              <div>
+                <span className="text-dim">Co-Founder: </span>
+                <a
                   href="mailto:marawan@devvmind.me"
                   className="text-mute hover:text-lime transition-colors underline decoration-line-2 underline-offset-4 hover:decoration-lime"
                 >

@@ -220,10 +220,10 @@ export function PRAnalysis() {
                   <div className="px-5 py-4">
                     <div className="label-mono flex items-center gap-2 text-dim">
                       <span className="h-1.5 w-1.5 rounded-full bg-amber" />
-                      03 · Blast Radius
+                      03 · Reasoned Impact
                     </div>
                     <div className="mt-2 font-mono text-[13px] font-medium text-amber">
-                      High Impact Surface
+                      Reasoning Synthesis
                     </div>
                     <div className="mt-1 font-mono text-[11px] text-dim">
                       Directly affects 3 downstream services
@@ -274,9 +274,11 @@ export function PRAnalysis() {
                   <div className="flex items-center justify-between border-b border-line pb-3">
                     <span className="label-mono flex items-center gap-2 text-mute">
                       <CircleCheck className="h-3.5 w-3.5 text-lime" />
-                      Synthesized Insight
+                      Engineering Insight
                     </span>
-                    <span className="font-mono text-[10px] text-dim">Claude reasoning over context</span>
+                    <span className="rounded border border-line-2 bg-ink-2 px-1.5 py-0.5 font-mono text-[9.5px] text-mute">
+                      Reasoning layer synthesis
+                    </span>
                   </div>
 
                   <div className="mt-4 rounded-md border border-lime/25 bg-lime/[0.04] p-3.5">
@@ -284,7 +286,7 @@ export function PRAnalysis() {
                       Modifying <code className="font-mono text-lime">auth/middleware.ts</code> affects token expiration across downstream notification workers and dashboard handlers.
                     </p>
                     <p className="mt-2 font-mono text-[11px] text-dim">
-                      Grounded in PR #87 and 4 repository import paths.
+                      Synthesis grounded in PR #87 and 4 repository import paths.
                     </p>
                   </div>
 
@@ -307,13 +309,13 @@ export function PRAnalysis() {
             </div>
 
             {/* status bar */}
-            <div className="flex items-center gap-4 border-t border-line bg-panel px-5 py-2.5 font-mono text-[10.5px] text-dim sm:px-6">
-              <span className="flex items-center gap-1.5">
+            <div className="flex items-center gap-3 border-t border-line bg-panel px-5 py-2.5 font-mono text-[10.5px] text-dim sm:px-6">
+              <span className="flex items-center gap-1.5 text-mute">
                 <span className="h-1.5 w-1.5 rounded-full bg-lime anim-pulse-dot" />
                 devvmind context layer
               </span>
-              <span className="hidden sm:inline">·</span>
-              <span className="hidden sm:inline">Reasoning by Claude</span>
+              <span>→</span>
+              <span className="text-fog">Reasoning & synthesis layer</span>
               <span className="ml-auto text-dim">Evidence cited</span>
             </div>
           </div>
