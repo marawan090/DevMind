@@ -140,45 +140,71 @@ export function SectionHead({
 
 export function PrimaryButton({
   children,
-  href = "#",
+  href,
+  onClick,
+  type = "button",
+  disabled = false,
   className,
 }: {
   children: ReactNode;
   href?: string;
+  onClick?: (e: React.MouseEvent<any>) => void;
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
   className?: string;
 }) {
+  const commonClasses = cn(
+    "group inline-flex h-10 items-center gap-2 rounded-md bg-lime px-4 text-[13.5px] font-semibold text-lime-ink transition-colors duration-200 hover:bg-[#b6ef52] active:bg-lime-deep disabled:opacity-60 disabled:pointer-events-none cursor-pointer",
+    className
+  );
+
+  if (href && !disabled) {
+    return (
+      <a href={href} onClick={onClick} className={commonClasses}>
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <a
-      href={href}
-      className={cn(
-        "group inline-flex h-10 items-center gap-2 rounded-md bg-lime px-4 text-[13.5px] font-semibold text-lime-ink transition-colors duration-200 hover:bg-[#b6ef52] active:bg-lime-deep",
-        className
-      )}
-    >
+    <button type={type} onClick={onClick} disabled={disabled} className={commonClasses}>
       {children}
-    </a>
+    </button>
   );
 }
 
 export function SecondaryButton({
   children,
-  href = "#",
+  href,
+  onClick,
+  type = "button",
+  disabled = false,
   className,
 }: {
   children: ReactNode;
   href?: string;
+  onClick?: (e: React.MouseEvent<any>) => void;
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
   className?: string;
 }) {
+  const commonClasses = cn(
+    "inline-flex h-10 items-center gap-2 rounded-md border border-line-2 bg-panel-2 px-4 text-[13.5px] font-medium text-fog transition-colors duration-200 hover:border-[#353b33] hover:bg-panel-3 disabled:opacity-60 disabled:pointer-events-none cursor-pointer",
+    className
+  );
+
+  if (href && !disabled) {
+    return (
+      <a href={href} onClick={onClick} className={commonClasses}>
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <a
-      href={href}
-      className={cn(
-        "inline-flex h-10 items-center gap-2 rounded-md border border-line-2 bg-panel-2 px-4 text-[13.5px] font-medium text-fog transition-colors duration-200 hover:border-[#353b33] hover:bg-panel-3",
-        className
-      )}
-    >
+    <button type={type} onClick={onClick} disabled={disabled} className={commonClasses}>
       {children}
-    </a>
+    </button>
   );
 }
 

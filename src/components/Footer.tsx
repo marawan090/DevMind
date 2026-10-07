@@ -4,15 +4,18 @@ const COLS: { head: string; links: { label: string; href: string; external?: boo
   {
     head: "Product",
     links: [
+      { label: "Request early access", href: "/early-access" },
       { label: "PR blast-radius analysis", href: "/#capabilities" },
       { label: "Historical context", href: "/#capabilities" },
       { label: "Reviewer intelligence", href: "/#capabilities" },
       { label: "Pipeline architecture", href: "/#architecture" },
+      { label: "Product status", href: "/#status" },
     ],
   },
   {
     head: "Explore",
     links: [
+      { label: "Why we built devvmind", href: "/#why-we-built" },
       { label: "How it works", href: "/#how-it-works" },
       { label: "Company overview", href: "/company" },
       { label: "About & Founders", href: "/#about" },

@@ -91,7 +91,53 @@ async function prerender() {
     fs.writeFileSync(path.resolve(companyDir, "index.html"), finalCompanyHtml, "utf-8");
     console.log("Saved prerendered company page to dist/company/index.html");
 
-    // 3. Ensure robots.txt and sitemap.xml are in dist
+    // 3. Prerender Early Access page (/early-access)
+    console.log("Rendering /early-access (Early Access Page)...");
+    const earlyAccessHtml = renderToString(React.createElement(App, { path: "/early-access" }));
+    console.log(`Early Access page rendered (${earlyAccessHtml.length} characters)`);
+
+    let finalEarlyAccessHtml = rawTemplate
+      .replace(
+        "<title>devvmind — Developer Intelligence for Modern Codebases</title>",
+        "<title>devvmind — Request Early Access</title>"
+      )
+      .replace(
+        '<link rel="canonical" href="https://devvmind.me/" />',
+        '<link rel="canonical" href="https://devvmind.me/early-access" />'
+      )
+      .replace(
+        '<meta property="og:url" content="https://devvmind.me/" />',
+        '<meta property="og:url" content="https://devvmind.me/early-access" />'
+      )
+      .replace(
+        '<meta property="og:title" content="devvmind — Developer Intelligence for Modern Codebases" />',
+        '<meta property="og:title" content="devvmind — Request Early Access" />'
+      )
+      .replace(
+        '<meta name="twitter:title" content="devvmind — Developer Intelligence for Modern Codebases" />',
+        '<meta name="twitter:title" content="devvmind — Request Early Access" />'
+      )
+      .replace(
+        '<meta name="description" content="devvmind delivers developer intelligence for modern codebases, combining static analysis, dependency mapping, and Git history with Claude-powered reasoning over repository context." />',
+        '<meta name="description" content="Request early access to devvmind. Evaluating repository-scale impact analysis across real-world codebases." />'
+      )
+      .replace(
+        '<meta property="og:description" content="devvmind delivers developer intelligence for modern codebases, combining static analysis, dependency mapping, and Git history with Claude-powered reasoning over repository context." />',
+        '<meta property="og:description" content="Request early access to devvmind. Evaluating repository-scale impact analysis across real-world codebases." />'
+      )
+      .replace(
+        '<div id="root"></div>',
+        `<div id="root">${earlyAccessHtml}</div>`
+      );
+
+    const earlyAccessDir = path.resolve(distDir, "early-access");
+    if (!fs.existsSync(earlyAccessDir)) {
+      fs.mkdirSync(earlyAccessDir, { recursive: true });
+    }
+    fs.writeFileSync(path.resolve(earlyAccessDir, "index.html"), finalEarlyAccessHtml, "utf-8");
+    console.log("Saved prerendered early access page to dist/early-access/index.html");
+
+    // 4. Ensure robots.txt and sitemap.xml are in dist
     const publicRobots = path.resolve(rootDir, "public", "robots.txt");
     const distRobots = path.resolve(distDir, "robots.txt");
     if (fs.existsSync(publicRobots) && !fs.existsSync(distRobots)) {

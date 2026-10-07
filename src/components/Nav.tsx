@@ -25,7 +25,11 @@ export function Logo({ className }: { className?: string }) {
   );
 }
 
-export function Nav() {
+export function Nav({
+  onRequestEarlyAccess,
+}: {
+  onRequestEarlyAccess?: () => void;
+}) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -35,6 +39,13 @@ export function Nav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const handleEarlyAccess = (e: React.MouseEvent) => {
+    if (onRequestEarlyAccess) {
+      e.preventDefault();
+      onRequestEarlyAccess();
+    }
+  };
 
   return (
     <header
@@ -70,10 +81,11 @@ export function Nav() {
             GitHub
           </a>
           <a
-            href="/#product"
+            href="/early-access"
+            onClick={handleEarlyAccess}
             className="inline-flex h-8 items-center gap-2 rounded-md bg-lime px-3.5 text-[13px] font-semibold text-lime-ink transition-colors hover:bg-[#b6ef52]"
           >
-            Explore devvmind
+            Request Early Access
           </a>
         </div>
 
@@ -107,11 +119,14 @@ export function Nav() {
           ))}
           <div className="mt-2 flex items-center gap-3 border-t border-line pt-4">
             <a
-              href="/#product"
-              onClick={() => setOpen(false)}
+              href="/early-access"
+              onClick={(e) => {
+                setOpen(false);
+                handleEarlyAccess(e);
+              }}
               className="inline-flex h-10 flex-1 items-center justify-center gap-2 rounded-md bg-lime text-[13.5px] font-semibold text-lime-ink"
             >
-              Explore devvmind
+              Request Early Access
             </a>
           </div>
         </nav>

@@ -1,8 +1,19 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
 import { Reveal, PrimaryButton, SecondaryButton } from "./ui";
 import { PRAnalysis } from "./PRAnalysis";
 
-export function Hero() {
+export function Hero({
+  onRequestEarlyAccess,
+}: {
+  onRequestEarlyAccess?: () => void;
+}) {
+  const handleEarlyAccessClick = (e: React.MouseEvent) => {
+    if (onRequestEarlyAccess) {
+      e.preventDefault();
+      onRequestEarlyAccess();
+    }
+  };
+
   return (
     <section id="top" className="relative overflow-hidden pt-14">
       {/* faint blueprint grid, masked to the top of the page */}
@@ -38,9 +49,17 @@ export function Hero() {
 
           <Reveal delay={0.28}>
             <div className="mt-9 flex flex-wrap items-center gap-3.5">
-              <PrimaryButton href="#product">
-                Explore devvmind
+              <PrimaryButton
+                href="/early-access"
+                onClick={handleEarlyAccessClick}
+                className="h-11 px-5 text-[14px]"
+              >
+                Request Early Access
+                <ArrowRight className="h-4 w-4" />
               </PrimaryButton>
+              <SecondaryButton href="#product">
+                Explore devvmind
+              </SecondaryButton>
               <SecondaryButton href="#how-it-works">
                 See How It Works
                 <ArrowDown className="h-3.5 w-3.5" />
@@ -54,7 +73,7 @@ export function Hero() {
         </div>
 
         {/* product showcase */}
-        <div id="product" className="relative scroll-mt-20 pb-24 sm:pb-32">
+        <div id="product" className="relative scroll-mt-20 pb-20 sm:pb-28">
           <Reveal>
             <div className="mb-4 flex items-center justify-between">
               <span className="label-mono flex items-center gap-2.5 text-mute">
@@ -74,6 +93,34 @@ export function Hero() {
               <span className="text-mute">Context</span>
               <span className="text-lime">→</span>
               <span className="text-mute">Impact</span>
+            </div>
+          </Reveal>
+
+          {/* secondary CTA below the product/demo section */}
+          <Reveal delay={0.25}>
+            <div className="mt-14 rounded-xl border border-line bg-panel p-6 sm:p-8 md:p-10 transition-colors hover:border-line-2">
+              <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+                <div className="max-w-[62ch]">
+                  <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-lime mb-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-lime anim-pulse-dot" />
+                    Early Access Evaluation
+                  </div>
+                  <h3 className="text-[20px] font-semibold text-fog sm:text-[23px] tracking-[-0.01em]">
+                    Want to try devvmind on your codebase?
+                  </h3>
+                  <p className="mt-2 text-[14.5px] leading-relaxed text-mute">
+                    We're currently onboarding early users and evaluating devvmind across real-world repositories.
+                  </p>
+                </div>
+                <PrimaryButton
+                  href="/early-access"
+                  onClick={handleEarlyAccessClick}
+                  className="shrink-0 h-11 px-5 text-[14px]"
+                >
+                  Request Early Access
+                  <ArrowRight className="h-4 w-4" />
+                </PrimaryButton>
+              </div>
             </div>
           </Reveal>
         </div>

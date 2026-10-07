@@ -59,7 +59,18 @@ function BackdropDiagram() {
   );
 }
 
-export function FinalCTA() {
+export function FinalCTA({
+  onRequestEarlyAccess,
+}: {
+  onRequestEarlyAccess?: () => void;
+}) {
+  const handleEarlyAccess = (e: React.MouseEvent) => {
+    if (onRequestEarlyAccess) {
+      e.preventDefault();
+      onRequestEarlyAccess();
+    }
+  };
+
   return (
     <section id="explore" className="scroll-mt-16 border-b border-line">
       <div className="mx-auto max-w-[1240px] px-5 py-24 sm:px-6 md:py-32">
@@ -79,8 +90,12 @@ export function FinalCTA() {
                 Explore how devvmind connects code, context, history, and reasoning.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
-                <PrimaryButton href="#top" className="h-11 px-5 text-[14px]">
-                  Explore devvmind
+                <PrimaryButton
+                  href="/early-access"
+                  onClick={handleEarlyAccess}
+                  className="h-11 px-5 text-[14px]"
+                >
+                  Request Early Access
                   <ArrowRight className="h-4 w-4 transition-transform duration-200" />
                 </PrimaryButton>
                 <a
