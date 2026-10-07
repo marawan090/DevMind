@@ -191,19 +191,25 @@ export function CompanyPage() {
               </div>
 
               <div className="rounded-xl border border-line bg-panel p-6 sm:p-7">
-                <div className="flex items-center gap-2 font-mono text-[12px] uppercase tracking-wider text-mute">
-                  <ShieldCheck className="h-4 w-4 text-lime" /> Reasoning Layer Status
+                <div className="flex items-center gap-2 font-mono text-[12px] uppercase tracking-wider text-lime">
+                  <ShieldCheck className="h-4 w-4 text-lime" /> Claude Integration &amp; Evaluation
                 </div>
                 <h3 className="mt-3 text-[17px] font-semibold text-fog">
-                  Claude as the Target Reasoning Layer
+                  Claude as a Core Reasoning Layer
                 </h3>
-                <p className="mt-3 text-[14px] leading-[1.7] text-mute">
-                  devvmind is currently prototyping its reasoning layer with open-source models,
-                  with Claude as the target reasoning and synthesis layer to be evaluated for
-                  repository-scale code intelligence.
-                </p>
-                <div className="mt-4 rounded-md border border-line-2 bg-ink-2 p-3 font-mono text-[11.5px] text-dim">
-                  devvmind builds the engineering context · Planned reasoning layer to be evaluated with Claude
+                <div className="mt-3 space-y-3 text-[13.5px] leading-[1.7] text-mute">
+                  <p>
+                    devvmind has evaluated Claude alongside open-source reasoning models as part of its early product development. Claude produced particularly impressive results on the repository-scale reasoning and evidence-synthesis problems we are solving. That experience motivated the team to pursue deeper Claude integration across the platform&rsquo;s core intelligence workflows.
+                  </p>
+                  <p>
+                    Our goal is not to replace devvmind&rsquo;s repository intelligence with a model. Instead, devvmind provides the structured evidence &mdash; retrieval, static analysis, dependencies, Git history, and repository context &mdash; while Claude serves as an increasingly important reasoning and synthesis layer.
+                  </p>
+                  <p className="text-fog font-medium">
+                    We are pursuing Claude Startups to expand and validate this integration at greater depth.
+                  </p>
+                </div>
+                <div className="mt-5 rounded-md border border-lime/30 bg-lime/[0.06] p-3 font-mono text-[11px] text-fog">
+                  Status: Claude evaluation completed · Deeper intelligence integration in progress
                 </div>
               </div>
             </div>

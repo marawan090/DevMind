@@ -46,6 +46,10 @@ export function Hero() {
                 <ArrowDown className="h-3.5 w-3.5" />
               </SecondaryButton>
             </div>
+            <div className="mt-6 flex items-center gap-2.5 font-mono text-[12px] text-dim">
+              <span className="h-1.5 w-1.5 rounded-full bg-lime" />
+              <span>Built with repository intelligence and AI reasoning &mdash; with Claude evaluated as a key reasoning layer.</span>
+            </div>
           </Reveal>
         </div>
 

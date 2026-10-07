@@ -72,6 +72,14 @@ async function prerender() {
         '<meta name="twitter:title" content="devvmind — Company & Verification" />'
       )
       .replace(
+        '<meta name="description" content="devvmind delivers developer intelligence for modern codebases, combining static analysis, dependency mapping, and Git history with Claude-powered reasoning over repository context." />',
+        '<meta name="description" content="Official company background, founders, and developer intelligence platform overview for devvmind." />'
+      )
+      .replace(
+        '<meta property="og:description" content="devvmind delivers developer intelligence for modern codebases, combining static analysis, dependency mapping, and Git history with Claude-powered reasoning over repository context." />',
+        '<meta property="og:description" content="Official company background, founders, and developer intelligence platform overview for devvmind." />'
+      )
+      .replace(
         '<div id="root"></div>',
         `<div id="root">${companyHtml}</div>`
       );

@@ -223,7 +223,7 @@ export function PRAnalysis() {
                       03 · Reasoned Impact
                     </div>
                     <div className="mt-2 font-mono text-[13px] font-medium text-amber">
-                      Reasoning Synthesis
+                      Claude Reasoning Synthesis
                     </div>
                     <div className="mt-1 font-mono text-[11px] text-dim">
                       Directly affects 3 downstream services
@@ -277,7 +277,7 @@ export function PRAnalysis() {
                       Engineering Insight
                     </span>
                     <span className="rounded border border-line-2 bg-ink-2 px-1.5 py-0.5 font-mono text-[9.5px] text-mute">
-                      Reasoning layer synthesis
+                      Claude reasoning synthesis
                     </span>
                   </div>
 
@@ -315,7 +315,7 @@ export function PRAnalysis() {
                 devvmind context layer
               </span>
               <span>→</span>
-              <span className="text-fog">Reasoning & synthesis layer</span>
+              <span className="text-fog">Claude reasoning &amp; synthesis layer</span>
               <span className="ml-auto text-dim">Evidence cited</span>
             </div>
           </div>

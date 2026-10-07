@@ -34,12 +34,12 @@ const STAGES: Stage[] = [
   {
     n: "03",
     icon: Waypoints,
-    title: "Reasoning Layer",
-    body: "The reasoning layer synthesizes the assembled context into structured, evidence-backed PR intelligence — to be evaluated with Claude.",
+    title: "Claude Reasoning Layer",
+    body: "Claude synthesizes the assembled repository context into structured, evidence-backed PR intelligence — evaluated with strong results during early development.",
     chips: ["blast radius", "reviewers", "citations"],
-    note: "devvmind provides the evidence; the reasoning model interprets it",
+    note: "devvmind gathers verified evidence; Claude reasons across the context",
     accent: true,
-    tag: "target: claude",
+    tag: "claude reasoning",
   },
 ];
 

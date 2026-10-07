@@ -32,24 +32,24 @@ const GROUPS: Group[] = [
     rows: [{ icon: GithubMark, title: "GitHub Repository", sub: "source of truth for the change" }],
   },
   {
-    rail: "devvmind — context layer",
+    rail: "devvmind — evidence & context",
     tone: "lime",
     rows: [
-      { icon: ScanLine, title: "Repository Ingestion", sub: "files, modules, symbols" },
-      { icon: Workflow, title: "Code Structure + Dependency Analysis", sub: "who imports what, and how far it reaches", accent: true },
-      { icon: History, title: "Git History + PR Context", sub: "commits, blame, related pull requests", accent: true },
-      { icon: Search, title: "Context Retrieval", sub: "the evidence set for this pull request", accent: true },
+      { icon: ScanLine, title: "Static Code Analysis", sub: "files, symbols, and syntax trees", accent: true },
+      { icon: Workflow, title: "Dependency Mapping", sub: "who imports what, and how far it reaches", accent: true },
+      { icon: History, title: "Git History + Repository Retrieval", sub: "commits, blame, and precedent pull requests", accent: true },
+      { icon: Search, title: "Evidence & Context Assembly", sub: "structured evidence grounding the reasoning process", accent: true },
     ],
   },
   {
-    rail: "reasoning layer — planned for evaluation with Claude",
+    rail: "reasoning layer",
     tone: "neutral",
-    rows: [{ text: "reasoning", title: "Reasoning & Synthesis Layer", sub: "reasons across retrieved context — planned for evaluation with Claude" }],
+    rows: [{ text: "claude", title: "Claude Reasoning Layer", sub: "reasons over gathered evidence & context" }],
   },
   {
     rail: "devvmind — output",
     tone: "lime",
-    rows: [{ icon: FileDiff, title: "Evidence-backed PR Analysis", sub: "impact, risk, reviewers, and cited sources", accent: true }],
+    rows: [{ icon: FileDiff, title: "Engineering Insight & PR Analysis", sub: "impact, risk, reviewers, and cited sources", accent: true }],
   },
   {
     rail: "delivery",
@@ -175,12 +175,11 @@ export function Architecture() {
               eyebrow="Architecture"
               index="03"
               title="The pipeline behind every analysis."
-              lede="Each pull request follows a structured pipeline: devvmind extracts code structure, dependencies, and Git history into verified context, which is then synthesized by the reasoning layer into actionable insights."
+              lede="Claude is not the entire product. devvmind builds the evidence and context layer around the repository, while Claude provides the reasoning and synthesis layer."
             />
             <Reveal delay={0.24}>
               <p className="mt-6 border-t border-line pt-5 font-mono text-[11px] leading-relaxed text-dim">
-                the loop is closed: input and output both live in your GitHub
-                repository.
+                devvmind grounds AI reasoning in structured repository evidence &mdash; code structure, dependencies, Git history, affected components, and relevant context &mdash; before synthesizing higher-level engineering insight.
               </p>
             </Reveal>
           </div>
@@ -193,8 +192,8 @@ export function Architecture() {
             </Reveal>
             <Reveal delay={0.25}>
               <p className="mt-6 text-center text-[15px] text-mute">
-                <span className="font-semibold text-fog">devvmind builds the engineering context.</span>{" "}
-                <span className="font-semibold text-lime">The reasoning layer interprets that context into actionable insights.</span>
+                <span className="font-semibold text-fog">devvmind builds the evidence &amp; context layer.</span>{" "}
+                <span className="font-semibold text-lime">Claude synthesizes that evidence into actionable engineering insight.</span>
               </p>
             </Reveal>
           </div>
