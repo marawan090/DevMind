@@ -35,7 +35,7 @@ const STAGES: Stage[] = [
     n: "03",
     icon: Waypoints,
     title: "Reasoning Layer",
-    body: "The reasoning layer synthesizes the assembled context into structured, evidence-backed PR intelligence — evaluated with Claude.",
+    body: "The reasoning layer synthesizes the assembled context into structured, evidence-backed PR intelligence — to be evaluated with Claude.",
     chips: ["blast radius", "reviewers", "citations"],
     note: "devvmind provides the evidence; the reasoning model interprets it",
     accent: true,

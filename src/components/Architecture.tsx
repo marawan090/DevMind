@@ -42,9 +42,9 @@ const GROUPS: Group[] = [
     ],
   },
   {
-    rail: "reasoning layer — evaluating Claude",
+    rail: "reasoning layer — planned for evaluation with Claude",
     tone: "neutral",
-    rows: [{ text: "reasoning", title: "Reasoning & Synthesis Layer", sub: "reasons across retrieved context — evaluating Claude" }],
+    rows: [{ text: "reasoning", title: "Reasoning & Synthesis Layer", sub: "reasons across retrieved context — planned for evaluation with Claude" }],
   },
   {
     rail: "devvmind — output",

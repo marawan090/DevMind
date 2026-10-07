@@ -146,7 +146,7 @@ export function History() {
                   <GitCommitHorizontal className="h-3.5 w-3.5 text-lime" />
                   {c.hash}
                 </span>
-                <span className="font-mono text-[11px] text-dim">{c.date}, 2025</span>
+                <span className="font-mono text-[11px] text-dim">{c.date}, 2026</span>
               </div>
 
               <div className="px-5 py-4">

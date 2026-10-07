@@ -36,14 +36,14 @@ export function ClaudeRole() {
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-5 max-w-[20ch] text-balance text-[30px] font-semibold leading-[1.15] tracking-[-0.02em] text-fog sm:text-[36px]">
-              Engineering context, reasoned with Claude.
+              Claude as the target reasoning layer
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
             <div className="mt-5 space-y-3.5 max-w-[56ch] text-[15.5px] leading-[1.75] text-mute">
               <p>
-                devvmind is currently prototyping its reasoning layer with open-source models
-                while evaluating Claude as the intended reasoning and synthesis layer for
+                devvmind is currently prototyping its reasoning layer with open-source models,
+                with Claude as the target reasoning and synthesis layer to be evaluated for
                 repository-scale code intelligence.
               </p>
               <p className="text-[14.5px]">
@@ -108,7 +108,7 @@ export function ClaudeRole() {
               </div>
             ))}
             <p className="mt-5 text-center font-mono text-[10.5px] leading-relaxed text-dim">
-              devvmind builds the context · Planned reasoning layer evaluated with Claude
+              devvmind builds the context · Planned reasoning layer to be evaluated with Claude
             </p>
           </div>
         </Reveal>
