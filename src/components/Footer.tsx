@@ -4,17 +4,18 @@ const COLS: { head: string; links: { label: string; href: string; external?: boo
   {
     head: "Product",
     links: [
-      { label: "PR blast-radius analysis", href: "#capabilities" },
-      { label: "Historical context", href: "#capabilities" },
-      { label: "Reviewer intelligence", href: "#capabilities" },
-      { label: "Pipeline architecture", href: "#architecture" },
+      { label: "PR blast-radius analysis", href: "/#capabilities" },
+      { label: "Historical context", href: "/#capabilities" },
+      { label: "Reviewer intelligence", href: "/#capabilities" },
+      { label: "Pipeline architecture", href: "/#architecture" },
     ],
   },
   {
     head: "Explore",
     links: [
-      { label: "How it works", href: "#how-it-works" },
-      { label: "About & Company", href: "#about" },
+      { label: "How it works", href: "/#how-it-works" },
+      { label: "Company overview", href: "/company" },
+      { label: "About & Founders", href: "/#about" },
       { label: "GitHub", href: "https://github.com/ayaeid225-dev/devmind", external: true },
       { label: "LinkedIn", href: "https://www.linkedin.com/company/devmindorg/", external: true },
     ],

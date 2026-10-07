@@ -104,6 +104,15 @@ export function Founders() {
                   devvmind helps engineers understand repository structure, code relationships,
                   history, and the potential impact of changes before modifying or merging code.
                 </p>
+                <div className="mt-3">
+                  <a
+                    href="/company"
+                    className="inline-flex items-center gap-1 font-mono text-[11.5px] text-lime hover:underline"
+                  >
+                    <span>Company overview & verification</span>
+                    <ArrowUpRight className="h-3 w-3" />
+                  </a>
+                </div>
               </div>
 
               <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4 font-mono text-[11px] text-dim">

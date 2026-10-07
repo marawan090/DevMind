@@ -4,16 +4,17 @@ import { GithubMark } from "./icons";
 import { cn } from "../utils/cn";
 
 const LINKS = [
-  { label: "Product", href: "#product" },
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Blast radius", href: "#capabilities" },
-  { label: "Architecture", href: "#architecture" },
-  { label: "About", href: "#about" },
+  { label: "Product", href: "/#product" },
+  { label: "How it works", href: "/#how-it-works" },
+  { label: "Blast radius", href: "/#capabilities" },
+  { label: "Architecture", href: "/#architecture" },
+  { label: "About", href: "/#about" },
+  { label: "Company", href: "/company" },
 ];
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <a href="#top" className={cn("group flex items-center gap-2.5", className)}>
+    <a href="/" className={cn("group flex items-center gap-2.5", className)}>
       <span className="flex h-[22px] w-[22px] items-center justify-center rounded-[6px] bg-lime transition-colors group-hover:bg-[#b6ef52]">
         <Waypoints className="h-[13px] w-[13px] text-lime-ink" strokeWidth={2.5} />
       </span>
@@ -69,7 +70,7 @@ export function Nav() {
             GitHub
           </a>
           <a
-            href="#product"
+            href="/#product"
             className="inline-flex h-8 items-center gap-2 rounded-md bg-lime px-3.5 text-[13px] font-semibold text-lime-ink transition-colors hover:bg-[#b6ef52]"
           >
             Explore devvmind
@@ -106,7 +107,7 @@ export function Nav() {
           ))}
           <div className="mt-2 flex items-center gap-3 border-t border-line pt-4">
             <a
-              href="#product"
+              href="/#product"
               onClick={() => setOpen(false)}
               className="inline-flex h-10 flex-1 items-center justify-center gap-2 rounded-md bg-lime text-[13.5px] font-semibold text-lime-ink"
             >
