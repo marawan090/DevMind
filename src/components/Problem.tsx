@@ -1,11 +1,11 @@
-import { GitCommitHorizontal, GitPullRequest, Users2, Workflow } from "lucide-react";
+import { AlertTriangle, GitPullRequest, Search, Workflow } from "lucide-react";
 import { Reveal, Eyebrow } from "./ui";
 
 const CHANNELS = [
-  { icon: Workflow, label: "Dependencies", note: "imports, call paths, downstream modules" },
-  { icon: GitCommitHorizontal, label: "Previous changes", note: "commits, blame, refactors in the same files" },
-  { icon: GitPullRequest, label: "Related pull requests", note: "earlier changes to the same flow" },
-  { icon: Users2, label: "Ownership", note: "who wrote, changed, and reviewed this area" },
+  { icon: Workflow, label: "Untraced dependencies", note: "imports, call paths, and downstream blast radius" },
+  { icon: GitPullRequest, label: "Open-PR collisions", note: "conflicting changes with concurrent open PRs" },
+  { icon: AlertTriangle, label: "Test gaps", note: "uncovered edge cases, missing assertions, and risk points" },
+  { icon: Search, label: "Scattered knowledge", note: "decisions trapped in Slack, lacking verifiable evidence" },
 ];
 
 export function Problem() {
@@ -18,14 +18,14 @@ export function Problem() {
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-5 max-w-[22ch] text-balance text-[30px] font-semibold leading-[1.15] tracking-[-0.02em] text-fog sm:text-[38px]">
-              Modern codebases move faster than human memory can track.
+              AI made writing code faster. Validation hasn't kept up.
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-6 max-w-[48ch] text-[16px] leading-[1.7] text-mute">
-              Pull requests rarely exist in isolation. When modifying code, engineers often lack
-              visibility into downstream dependencies, past architectural decisions, and repository history —
-              making it hard to know what might break before merging.
+              Pull requests introduce hidden production bugs, prompts break untraced dependencies,
+              technical knowledge is scattered across Slack, and AI answers lack verifiable evidence.
+              DevvMind provides the engineering intelligence layer to validate AI-written code before it reaches production.
             </p>
           </Reveal>
         </div>

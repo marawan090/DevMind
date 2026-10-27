@@ -101,10 +101,10 @@ export function Reviewers() {
       <div className="mx-auto grid max-w-[1240px] gap-12 px-5 py-24 sm:px-6 md:py-32 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-16">
         <div>
           <SectionHead
-            eyebrow="Capability 03 · Reviewer intelligence"
-            index="06"
+            eyebrow="PR Governance · Reviewer intelligence"
+            index="07"
             title="Suggested reviewers, grounded in history."
-            lede="Surface contributors and reviewers with relevant history around the affected parts of the codebase."
+            lede="Route pull requests to reviewers with direct commit history, related PR experience, and ownership of downstream dependencies."
           />
           <div className="mt-9 border-t border-line">
             {SIGNALS.map((s, i) => (

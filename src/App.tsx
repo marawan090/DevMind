@@ -4,12 +4,13 @@ import { Nav } from "./components/Nav";
 import { Hero } from "./components/Hero";
 import { Problem } from "./components/Problem";
 import { WhyWeBuilt } from "./components/WhyWeBuilt";
+import { Modules } from "./components/Modules";
 import { HowItWorks } from "./components/HowItWorks";
 import { Architecture } from "./components/Architecture";
 import { BlastRadius } from "./components/BlastRadius";
 import { History } from "./components/History";
 import { Reviewers } from "./components/Reviewers";
-import { ClaudeRole } from "./components/ClaudeRole";
+import { WhoItsFor } from "./components/WhoItsFor";
 import { Differentiation } from "./components/Differentiation";
 import { ProductStatus } from "./components/ProductStatus";
 import { Founders } from "./components/Founders";
@@ -85,12 +86,13 @@ export default function App({ path }: { path?: string }) {
           <Hero onRequestEarlyAccess={openEarlyAccess} />
           <Problem />
           <WhyWeBuilt />
+          <Modules />
           <HowItWorks />
           <Architecture />
           <BlastRadius />
           <History />
           <Reviewers />
-          <ClaudeRole />
+          <WhoItsFor />
           <Differentiation />
           <ProductStatus />
           <Founders />

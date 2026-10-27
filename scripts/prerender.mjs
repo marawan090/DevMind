@@ -52,7 +52,7 @@ async function prerender() {
 
     let finalCompanyHtml = rawTemplate
       .replace(
-        "<title>devvmind — Developer Intelligence for Modern Codebases</title>",
+        "<title>devvmind — Engineering Intelligence for AI-Written Code</title>",
         "<title>devvmind — Company & Verification</title>"
       )
       .replace(
@@ -64,20 +64,20 @@ async function prerender() {
         '<meta property="og:url" content="https://devvmind.me/company" />'
       )
       .replace(
-        '<meta property="og:title" content="devvmind — Developer Intelligence for Modern Codebases" />',
+        '<meta property="og:title" content="devvmind — Engineering Intelligence for AI-Written Code" />',
         '<meta property="og:title" content="devvmind — Company & Verification" />'
       )
       .replace(
-        '<meta name="twitter:title" content="devvmind — Developer Intelligence for Modern Codebases" />',
+        '<meta name="twitter:title" content="devvmind — Engineering Intelligence for AI-Written Code" />',
         '<meta name="twitter:title" content="devvmind — Company & Verification" />'
       )
       .replace(
-        '<meta name="description" content="devvmind delivers developer intelligence for modern codebases, combining static analysis, dependency mapping, and Git history with Claude-powered reasoning over repository context." />',
-        '<meta name="description" content="Official company background, founders, and developer intelligence platform overview for devvmind." />'
+        '<meta name="description" content="devvmind is the trusted engineering intelligence layer for AI-written code. Validates AI-generated code before it merges into production with repository intelligence, dependency mapping, and test gap detection." />',
+        '<meta name="description" content="Official company background, founders, and engineering intelligence platform overview for devvmind." />'
       )
       .replace(
-        '<meta property="og:description" content="devvmind delivers developer intelligence for modern codebases, combining static analysis, dependency mapping, and Git history with Claude-powered reasoning over repository context." />',
-        '<meta property="og:description" content="Official company background, founders, and developer intelligence platform overview for devvmind." />'
+        '<meta property="og:description" content="devvmind is the trusted engineering intelligence layer for AI-written code. Validates AI-generated code before it merges into production with repository intelligence, dependency mapping, and test gap detection." />',
+        '<meta property="og:description" content="Official company background, founders, and engineering intelligence platform overview for devvmind." />'
       )
       .replace(
         '<div id="root"></div>',
@@ -98,7 +98,7 @@ async function prerender() {
 
     let finalEarlyAccessHtml = rawTemplate
       .replace(
-        "<title>devvmind — Developer Intelligence for Modern Codebases</title>",
+        "<title>devvmind — Engineering Intelligence for AI-Written Code</title>",
         "<title>devvmind — Request Early Access</title>"
       )
       .replace(
@@ -110,20 +110,20 @@ async function prerender() {
         '<meta property="og:url" content="https://devvmind.me/early-access" />'
       )
       .replace(
-        '<meta property="og:title" content="devvmind — Developer Intelligence for Modern Codebases" />',
+        '<meta property="og:title" content="devvmind — Engineering Intelligence for AI-Written Code" />',
         '<meta property="og:title" content="devvmind — Request Early Access" />'
       )
       .replace(
-        '<meta name="twitter:title" content="devvmind — Developer Intelligence for Modern Codebases" />',
+        '<meta name="twitter:title" content="devvmind — Engineering Intelligence for AI-Written Code" />',
         '<meta name="twitter:title" content="devvmind — Request Early Access" />'
       )
       .replace(
-        '<meta name="description" content="devvmind delivers developer intelligence for modern codebases, combining static analysis, dependency mapping, and Git history with Claude-powered reasoning over repository context." />',
-        '<meta name="description" content="Request early access to devvmind. Evaluating repository-scale impact analysis across real-world codebases." />'
+        '<meta name="description" content="devvmind is the trusted engineering intelligence layer for AI-written code. Validates AI-generated code before it merges into production with repository intelligence, dependency mapping, and test gap detection." />',
+        '<meta name="description" content="Request early access to devvmind. Starting pilots with engineering teams to validate AI-written code before it merges into production." />'
       )
       .replace(
-        '<meta property="og:description" content="devvmind delivers developer intelligence for modern codebases, combining static analysis, dependency mapping, and Git history with Claude-powered reasoning over repository context." />',
-        '<meta property="og:description" content="Request early access to devvmind. Evaluating repository-scale impact analysis across real-world codebases." />'
+        '<meta property="og:description" content="devvmind is the trusted engineering intelligence layer for AI-written code. Validates AI-generated code before it merges into production with repository intelligence, dependency mapping, and test gap detection." />',
+        '<meta property="og:description" content="Request early access to devvmind. Starting pilots with engineering teams to validate AI-written code before it merges into production." />'
       )
       .replace(
         '<div id="root"></div>',

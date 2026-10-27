@@ -1,5 +1,28 @@
-import { Activity, Binary, FlaskConical, GitFork, Lock, Search } from "lucide-react";
+import { CheckCircle2, GitBranch, GitMerge, ShieldCheck, Sparkles } from "lucide-react";
 import { Eyebrow, Reveal } from "./ui";
+
+const ROADMAP_ITEMS = [
+  {
+    title: "Semgrep Static Analysis",
+    desc: "Deep semantic rule matching and automated static code pattern verification across repository syntax trees.",
+    tag: "Static Analysis",
+  },
+  {
+    title: "OSV Vulnerability Intelligence",
+    desc: "Direct integration with the Open Source Vulnerabilities (OSV) database for real-time package CVE detection and supply-chain risk mapping.",
+    tag: "Security",
+  },
+  {
+    title: "GitLab Support",
+    desc: "Full merge request governance, branch collision detection, and CI/CD workflow integration for GitLab-hosted codebases.",
+    tag: "Platform",
+  },
+  {
+    title: "Bitbucket Support",
+    desc: "Pull request analysis, repository intelligence, and evidence-backed reviewer routing for Atlassian Bitbucket teams.",
+    tag: "Platform",
+  },
+];
 
 export function ProductStatus() {
   return (
@@ -14,106 +37,80 @@ export function ProductStatus() {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime opacity-60" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-lime" />
                 </span>
-                <span className="label-mono text-mute">Product Status</span>
+                <span className="label-mono text-mute">10 · Product Status &amp; Roadmap</span>
                 <span className="rounded border border-lime/30 bg-lime/10 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-lime">
-                  Internal Evaluation
+                  Pilots Starting
                 </span>
               </div>
             </Reveal>
 
             <Reveal delay={0.08}>
               <h2 className="mt-5 text-balance text-[30px] font-semibold leading-[1.15] tracking-[-0.02em] text-fog sm:text-[38px]">
-                Early Development & Evaluation
+                Working product running on real GitHub repositories.
               </h2>
             </Reveal>
 
             <Reveal delay={0.16}>
               <div className="mt-6 space-y-4 text-[15.5px] leading-[1.75] text-mute">
                 <p>
-                  devvmind is currently in active development. We are validating repository-scale impact analysis and evidence-backed reasoning through internal testing across real-world open-source GitHub repositories.
+                  DevvMind is a working product with all four modules &mdash; Prompt Studio, PR Governance, Security Analysis, and Documentation &mdash; running on real GitHub repositories.
                 </p>
                 <p>
-                  We are currently focused on improving the accuracy of dependency impact analysis, historical context retrieval, and evidence-backed reasoning before opening devvmind to external users.
+                  We validated the problem through an in-depth roundtable with engineering leaders, confirming that validating AI-written code before merge is the most critical hurdle in scaling AI adoption. We are now starting pilots with engineering teams.
                 </p>
               </div>
             </Reveal>
 
             <Reveal delay={0.22}>
               <div className="mt-8 flex flex-wrap items-center gap-2.5 font-mono text-[11px] text-dim">
-                <span className="flex items-center gap-1.5 rounded border border-line-2 bg-panel px-2.5 py-1">
-                  <GitFork className="h-3 w-3 text-lime" />
-                  Testing on open-source repos
+                <span className="flex items-center gap-1.5 rounded border border-lime/30 bg-lime/[0.05] px-2.5 py-1 text-fog">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-lime" />
+                  All 4 modules operational
                 </span>
                 <span className="flex items-center gap-1.5 rounded border border-line-2 bg-panel px-2.5 py-1">
-                  <Lock className="h-3 w-3 text-dim" />
-                  Internal testing stage
+                  <ShieldCheck className="h-3 w-3 text-lime" />
+                  Roundtable validated with engineering leaders
                 </span>
                 <span className="flex items-center gap-1.5 rounded border border-line-2 bg-panel px-2.5 py-1">
-                  <span className="h-1.5 w-1.5 rounded-full bg-amber" />
-                  Not yet open to external users
+                  <span className="h-1.5 w-1.5 rounded-full bg-lime anim-pulse-dot" />
+                  Starting pilots with engineering teams
                 </span>
               </div>
             </Reveal>
           </div>
 
-          {/* Technical focus areas card */}
+          {/* Roadmap card */}
           <Reveal delay={0.15}>
             <div className="rounded-xl border border-line bg-panel p-6 sm:p-7">
               <div className="flex items-center justify-between border-b border-line pb-3.5">
                 <span className="label-mono flex items-center gap-2 text-mute">
-                  <Activity className="h-3.5 w-3.5 text-lime" />
-                  Current Focus & Validation
+                  <Sparkles className="h-3.5 w-3.5 text-lime" />
+                  Roadmap
                 </span>
-                <span className="font-mono text-[10.5px] text-dim">Internal Milestones</span>
+                <span className="font-mono text-[10.5px] text-dim">Upcoming Releases</span>
               </div>
 
               <div className="mt-5 space-y-3.5">
-                <div className="rounded-lg border border-line-2 bg-ink-2 p-3.5">
-                  <div className="flex items-center gap-2.5">
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md border border-line-2 bg-panel-2">
-                      <Binary className="h-3.5 w-3.5 text-lime" />
-                    </span>
-                    <span className="text-[13.5px] font-semibold text-fog">
-                      Dependency Impact Analysis
-                    </span>
+                {ROADMAP_ITEMS.map((item) => (
+                  <div key={item.title} className="rounded-lg border border-line-2 bg-ink-2 p-3.5">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[13.5px] font-semibold text-fog">
+                        {item.title}
+                      </span>
+                      <span className="rounded border border-line-2 bg-panel px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-wider text-dim">
+                        {item.tag}
+                      </span>
+                    </div>
+                    <p className="mt-2 text-[12.5px] leading-relaxed text-mute">
+                      {item.desc}
+                    </p>
                   </div>
-                  <p className="mt-2 text-[12.5px] leading-relaxed text-mute">
-                    Improving the precision of static dependency mapping, symbol call graphs, and downstream blast-radius calculations.
-                  </p>
-                </div>
-
-                <div className="rounded-lg border border-line-2 bg-ink-2 p-3.5">
-                  <div className="flex items-center gap-2.5">
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md border border-line-2 bg-panel-2">
-                      <Search className="h-3.5 w-3.5 text-lime" />
-                    </span>
-                    <span className="text-[13.5px] font-semibold text-fog">
-                      Historical Context Retrieval
-                    </span>
-                  </div>
-                  <p className="mt-2 text-[12.5px] leading-relaxed text-mute">
-                    Refining the retrieval of relevant commits, historical pull requests, and Git blame trails across repository history.
-                  </p>
-                </div>
-
-                <div className="rounded-lg border border-line-2 bg-ink-2 p-3.5">
-                  <div className="flex items-center gap-2.5">
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md border border-line-2 bg-panel-2">
-                      <FlaskConical className="h-3.5 w-3.5 text-lime" />
-                    </span>
-                    <span className="text-[13.5px] font-semibold text-fog">
-                      Evidence-Backed Reasoning
-                    </span>
-                  </div>
-                  <p className="mt-2 text-[12.5px] leading-relaxed text-mute">
-                    Validating model reasoning across assembled repository context before making devvmind available externally.
-                  </p>
-                </div>
+                ))}
               </div>
 
               <div className="mt-5 flex items-center justify-between border-t border-line pt-3.5 font-mono text-[11px] text-dim">
-                <span>Evaluation phase</span>
-                <span className="text-lime">Pre-release engineering</span>
+                <span>Active development</span>
+                <span className="text-lime">Pilots in progress</span>
               </div>
             </div>
           </Reveal>

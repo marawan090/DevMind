@@ -18,16 +18,16 @@ export function WhyWeBuilt() {
             </Reveal>
             <Reveal delay={0.14}>
               <p className="mt-6 text-[18px] font-medium leading-[1.5] text-fog sm:text-[20px]">
-                Small code changes can have consequences far beyond the files being edited.
+                AI-written code merges faster than ever, but validation is the new bottleneck.
               </p>
             </Reveal>
             <Reveal delay={0.2}>
               <div className="mt-5 space-y-4 text-[15.5px] leading-[1.75] text-mute">
                 <p>
-                  Engineers can see what changed in a pull request, but understanding what that change could affect often requires searching through dependencies, repository history, previous changes, and unfamiliar parts of the codebase.
+                  Engineers can see the diff in a pull request, but understanding what AI-generated code could break requires tracing untraced dependencies, checking for collisions with other open PRs, and finding critical test gaps.
                 </p>
                 <p>
-                  We built devvmind to make that context easier to understand before changes are merged — combining repository evidence, code relationships, and historical context to help engineers reason about the potential impact of their changes.
+                  We built devvmind to give engineering teams an evidence-backed governance layer before code merges &mdash; combining deterministic repository intelligence with AI reasoning to validate changes, detect collisions, and prevent production regressions.
                 </p>
               </div>
             </Reveal>
@@ -39,9 +39,9 @@ export function WhyWeBuilt() {
               <div className="flex items-center justify-between border-b border-line pb-3.5">
                 <span className="label-mono flex items-center gap-2 text-mute">
                   <GitPullRequest className="h-3.5 w-3.5 text-lime" />
-                  Context Before Merging
+                  PR Governance &amp; Validation
                 </span>
-                <span className="font-mono text-[10.5px] text-dim">Pre-merge reasoning</span>
+                <span className="font-mono text-[10.5px] text-dim">Pre-merge validation</span>
               </div>
 
               <div className="mt-5 space-y-3.5">
@@ -49,12 +49,12 @@ export function WhyWeBuilt() {
                 <div className="rounded-lg border border-line-2 bg-ink-2 p-4">
                   <div className="flex items-center justify-between">
                     <span className="font-mono text-[11px] uppercase tracking-wider text-dim">
-                      The pull request view
+                      The AI-generated PR
                     </span>
                     <span className="font-mono text-[10px] text-dim">Isolated diff</span>
                   </div>
                   <p className="mt-2 text-[13.5px] leading-relaxed text-mute">
-                    Shows which lines and files were edited, but cannot show what those changes touch across the broader repository.
+                    AI generates code rapidly, but diffs lack visibility into untraced dependencies or collateral blast radius across the repository.
                   </p>
                 </div>
 
@@ -62,12 +62,12 @@ export function WhyWeBuilt() {
                 <div className="rounded-lg border border-line-2 bg-ink-2 p-4">
                   <div className="flex items-center justify-between">
                     <span className="font-mono text-[11px] uppercase tracking-wider text-dim">
-                      The manual effort
+                      Validation blind spots
                     </span>
-                    <span className="font-mono text-[10px] text-dim">Scattered search</span>
+                    <span className="font-mono text-[10px] text-dim">Manual review</span>
                   </div>
                   <p className="mt-2 text-[13.5px] leading-relaxed text-mute">
-                    Engineers spend valuable time digging through dependencies, past commit history, blame, and unfamiliar modules.
+                    Engineers spend hours chasing down open-PR collisions, missing tests, and tribal knowledge scattered across chat channels.
                   </p>
                 </div>
 
@@ -75,19 +75,19 @@ export function WhyWeBuilt() {
                 <div className="rounded-lg border border-lime/30 bg-lime/[0.04] p-4">
                   <div className="flex items-center justify-between">
                     <span className="font-mono text-[11px] uppercase tracking-wider text-lime">
-                      The devvmind approach
+                      The devvmind governance layer
                     </span>
-                    <span className="font-mono text-[10px] text-lime/80">Repository evidence</span>
+                    <span className="font-mono text-[10px] text-lime/80">Evidence-backed merge</span>
                   </div>
                   <p className="mt-2 text-[13.5px] leading-relaxed text-fog">
-                    Combines repository evidence, code relationships, and historical context to help engineers reason about potential impact before code is merged.
+                    Analyzes dependency impact, test gaps, and downstream files, detects open-PR collisions, and delivers clear merge recommendations.
                   </p>
                 </div>
               </div>
 
               <div className="mt-5 flex items-center justify-between border-t border-line pt-3.5 font-mono text-[11px] text-dim">
-                <span>Repository evidence + Model reasoning</span>
-                <span className="text-mute">Proactive context</span>
+                <span>Repository evidence + AI reasoning</span>
+                <span className="text-mute">Pre-merge governance</span>
               </div>
             </div>
           </Reveal>

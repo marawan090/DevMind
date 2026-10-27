@@ -79,10 +79,10 @@ export function History() {
         {/* left: timeline */}
         <div>
           <SectionHead
-            eyebrow="Capability 02 · Historical context"
-            index="05"
+            eyebrow="PR Governance · Historical context"
+            index="06"
             title="Every change has a trail."
-            lede="Connect code changes with relevant commits, Git blame, previous pull requests, and repository history."
+            lede="Validate changes against historical pull requests, precedent architectural decisions, and commit trails &mdash; uncovering what past changes touched and preventing recurring regressions."
           />
 
           <div className="relative mt-12">

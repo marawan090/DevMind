@@ -79,10 +79,10 @@ export function EarlyAccessModal({
             <div className="px-6 py-6 sm:px-8">
               <div className="mb-6">
                 <h2 id="early-access-modal-title" className="text-[22px] font-semibold tracking-[-0.01em] text-fog sm:text-[24px]">
-                  Join the devvmind evaluation
+                  Join the devvmind pilot program
                 </h2>
                 <p className="mt-1.5 text-[14px] leading-relaxed text-mute">
-                  We're currently onboarding early teams and evaluating devvmind across real-world codebases. Tell us about your repository.
+                  We're starting pilots with engineering teams to validate AI-written code before it merges into production. Tell us about your repository.
                 </p>
               </div>
 

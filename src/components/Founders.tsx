@@ -1,5 +1,5 @@
 import { ArrowUpRight, Mail } from "lucide-react";
-import { GithubMark, LinkedinMark } from "./icons";
+import { LinkedinMark } from "./icons";
 import { Reveal, SectionHead } from "./ui";
 
 const FOUNDERS = [
@@ -30,9 +30,9 @@ export function Founders() {
       <div className="mx-auto max-w-[1240px] px-5 py-24 sm:px-6 md:py-32">
         <SectionHead
           eyebrow="About & Founders"
-          index="09"
+          index="11"
           title="Built for engineers navigating complex codebases."
-          lede="devvmind is a developer intelligence platform founded in 2026 by Aya Eid and Marawan Mohamed."
+          lede="devvmind is an engineering intelligence platform founded in 2026 by Aya Eid and Marawan Mohamed."
         />
 
         {/* founders grid */}
@@ -98,11 +98,11 @@ export function Founders() {
                 </div>
                 <h4 className="mt-3 text-[18px] font-semibold text-fog">devvmind</h4>
                 <p className="mt-1 font-mono text-[12px] text-dim">
-                  Developer intelligence platform founded in 2026.
+                  Engineering intelligence layer for AI-written code founded in 2026.
                 </p>
                 <p className="mt-4 text-[13.5px] leading-[1.7] text-mute">
-                  devvmind helps engineers understand repository structure, code relationships,
-                  history, and the potential impact of changes before modifying or merging code.
+                  devvmind validates AI-generated code before it merges into production &mdash; combining
+                  repository intelligence, dependency mapping, and test gap detection.
                 </p>
                 <div className="mt-3">
                   <a
@@ -167,42 +167,28 @@ export function Founders() {
               </p>
             </div>
 
-            {/* official links card (GitHub & LinkedIn) */}
+            {/* official links card (LinkedIn) */}
             <div className="flex flex-col justify-between rounded-xl border border-line bg-panel p-6 sm:p-7">
-              <div className="space-y-5">
-                <div>
-                  <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-dim">
-                    <GithubMark className="h-3.5 w-3.5 text-lime" /> Official GitHub
-                  </div>
-                  <a
-                    href="https://github.com/ayaeid225-dev/devmind"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-2.5 inline-flex items-center gap-2 rounded-md border border-line-2 bg-panel-2 px-3 py-1.5 text-[12px] font-medium text-fog transition-colors hover:border-lime/40 hover:bg-panel-3"
-                  >
-                    View on GitHub
-                    <ArrowUpRight className="h-3 w-3 text-dim" />
-                  </a>
+              <div>
+                <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-dim">
+                  <LinkedinMark className="h-3.5 w-3.5 text-lime" /> Official LinkedIn
                 </div>
-
-                <div className="border-t border-line pt-4">
-                  <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-dim">
-                    <LinkedinMark className="h-3.5 w-3.5 text-lime" /> Official LinkedIn
-                  </div>
-                  <a
-                    href="https://www.linkedin.com/company/devmindorg/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-2.5 inline-flex items-center gap-2 rounded-md border border-line-2 bg-panel-2 px-3 py-1.5 text-[12px] font-medium text-fog transition-colors hover:border-lime/40 hover:bg-panel-3"
-                  >
-                    Company Page
-                    <ArrowUpRight className="h-3 w-3 text-dim" />
-                  </a>
-                </div>
+                <p className="mt-3 text-[13.5px] leading-relaxed text-mute">
+                  Follow devvmind announcements, pilot milestones, and engineering updates on our official company page.
+                </p>
+                <a
+                  href="https://www.linkedin.com/company/devmindorg/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 rounded-md border border-line-2 bg-panel-2 px-3 py-1.5 text-[12px] font-medium text-fog transition-colors hover:border-lime/40 hover:bg-panel-3"
+                >
+                  Company Page
+                  <ArrowUpRight className="h-3 w-3 text-dim" />
+                </a>
               </div>
 
-              <p className="mt-4 font-mono text-[11px] text-dim">
-                Official repository & company page
+              <p className="mt-4 border-t border-line pt-4 font-mono text-[11px] text-dim">
+                Official company page
               </p>
             </div>
           </div>

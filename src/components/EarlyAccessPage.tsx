@@ -34,14 +34,14 @@ export function EarlyAccessPage() {
               </Reveal>
               <Reveal delay={0.16}>
                 <p className="mt-4 max-w-[50ch] text-[16px] leading-[1.7] text-mute sm:text-[17px]">
-                  We're currently onboarding early users and evaluating devvmind across real-world repositories.
+                  We're starting pilots with engineering teams adopting AI coding tools to validate code before it merges into production.
                 </p>
               </Reveal>
 
               <Reveal delay={0.24}>
                 <div className="mt-8 space-y-4 rounded-xl border border-line bg-panel p-6">
                   <h2 className="font-mono text-[12px] uppercase tracking-wider text-dim">
-                    What we look for during early access
+                    What we look for during engineering pilots
                   </h2>
                   <div className="space-y-3 pt-1">
                     <div className="flex items-start gap-3">
@@ -49,7 +49,7 @@ export function EarlyAccessPage() {
                         <CheckCircle2 className="h-3.5 w-3.5" />
                       </span>
                       <p className="text-[13.5px] leading-relaxed text-mute">
-                        Engineering teams managing complex multi-module codebases where pull request impact is hard to predict.
+                        Engineering teams (15–30 engineers) adopting AI coding assistants looking to eliminate review bottlenecks.
                       </p>
                     </div>
 
@@ -58,7 +58,7 @@ export function EarlyAccessPage() {
                         <CheckCircle2 className="h-3.5 w-3.5" />
                       </span>
                       <p className="text-[13.5px] leading-relaxed text-mute">
-                        Repositories with active pull request review workflows looking to surface downstream blast radius automatically.
+                        Repositories with active pull request review workflows needing automated blast radius, open-PR collision detection, and test gap analysis.
                       </p>
                     </div>
 
@@ -67,14 +67,14 @@ export function EarlyAccessPage() {
                         <CheckCircle2 className="h-3.5 w-3.5" />
                       </span>
                       <p className="text-[13.5px] leading-relaxed text-mute">
-                        Teams willing to provide direct feedback on dependency accuracy, Git retrieval, and model reasoning.
+                        Teams wanting evidence-backed merge recommendations rather than ungrounded AI code generation.
                       </p>
                     </div>
                   </div>
 
                   <div className="border-t border-line pt-4 font-mono text-[11px] text-dim flex items-center justify-between">
                     <span>Validation target: GitHub PRs</span>
-                    <span className="text-lime">Controlled cohort</span>
+                    <span className="text-lime">Pilots starting</span>
                   </div>
                 </div>
               </Reveal>

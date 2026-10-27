@@ -200,7 +200,7 @@ function Impact({ scenario }: { scenario: Scenario }) {
         <div className="rounded-b-lg border-t border-lime/20 bg-lime/[0.05] px-4 py-3">
           <p className="flex gap-2 text-[12px] leading-relaxed text-mute">
             <ShieldAlert className="mt-0.5 h-3.5 w-3.5 shrink-0 text-lime" />
-            Static analysis resolves the dependency graph; Claude reasons over gathered repository context (affected components, dependencies, Git history, reviewer context) to produce structured impact assessments.
+            Static analysis resolves the dependency graph; AI reasoning synthesizes gathered repository context (affected components, dependencies, Git history, reviewer context) to produce structured impact assessments and highlight test gaps.
           </p>
         </div>
       </motion.div>
@@ -225,10 +225,10 @@ export function BlastRadius() {
       <div className="relative mx-auto max-w-[1240px] px-5 py-24 sm:px-6 md:py-32">
         <div className="grid gap-6 lg:grid-cols-2 lg:items-end">
           <SectionHead
-            eyebrow="Core capability · Blast radius"
-            index="04"
+            eyebrow="PR Governance · Blast radius"
+            index="05"
             title="Before you change a file, see what depends on it."
-            lede="devvmind analyzes a change across repository structure, dependencies, Git history, and related code to build an evidence-backed context window. Claude can then reason over that context to help explain potential impact, historical context, and review considerations."
+            lede="devvmind analyzes pull requests across repository dependencies, test gaps, and downstream files. The AI reasoning layer then reasons over that context to predict blast radius, detect open-PR collisions, and deliver evidence-backed merge recommendations."
           />
           <Reveal delay={0.2} className="lg:justify-self-end">
             <p className="max-w-[34ch] font-mono text-[11px] leading-relaxed text-dim lg:pb-1 lg:text-right">

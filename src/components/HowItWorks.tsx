@@ -34,12 +34,12 @@ const STAGES: Stage[] = [
   {
     n: "03",
     icon: Waypoints,
-    title: "Claude Reasoning Layer",
-    body: "Claude synthesizes the assembled repository context into structured, evidence-backed PR intelligence — evaluated with strong results during early development.",
+    title: "AI Reasoning Layer",
+    body: "The AI reasoning layer synthesizes the assembled repository context into structured, evidence-backed PR intelligence and validation recommendations.",
     chips: ["blast radius", "reviewers", "citations"],
-    note: "devvmind gathers verified evidence; Claude reasons across the context",
+    note: "devvmind gathers verified evidence; AI reasoning synthesizes actionable insight",
     accent: true,
-    tag: "claude reasoning",
+    tag: "AI reasoning",
   },
 ];
 
@@ -84,7 +84,7 @@ export function HowItWorks() {
       <div className="mx-auto max-w-[1240px] px-5 py-24 sm:px-6 md:py-32">
         <SectionHead
           eyebrow="How devvmind works"
-          index="02"
+          index="03"
           title="From repository context to actionable reasoning."
           lede="Three stages, in strict order: devvmind maps repository structure, retrieves verified engineering context, and synthesizes evidence-backed pull request insights."
         />

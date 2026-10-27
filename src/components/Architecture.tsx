@@ -13,7 +13,7 @@ import { cn } from "../utils/cn";
 
 type Row = {
   icon?: React.ComponentType<{ className?: string; strokeWidth?: number }>;
-  text?: string; // text-based mark (e.g., "claude")
+  text?: string; // text-based mark (e.g., "AI")
   title: string;
   sub: string;
   accent?: boolean;
@@ -44,7 +44,7 @@ const GROUPS: Group[] = [
   {
     rail: "reasoning layer",
     tone: "neutral",
-    rows: [{ text: "claude", title: "Claude Reasoning Layer", sub: "reasons over gathered evidence & context" }],
+    rows: [{ text: "AI", title: "AI Reasoning Layer", sub: "reasons over gathered evidence & context" }],
   },
   {
     rail: "devvmind — output",
@@ -173,9 +173,9 @@ export function Architecture() {
           <div>
             <SectionHead
               eyebrow="Architecture"
-              index="03"
+              index="04"
               title="The pipeline behind every analysis."
-              lede="Claude is not the entire product. devvmind builds the evidence and context layer around the repository, while Claude provides the reasoning and synthesis layer."
+              lede="devvmind builds the evidence and context layer around the repository, while the AI reasoning layer synthesizes that evidence into engineering insight."
             />
             <Reveal delay={0.24}>
               <p className="mt-6 border-t border-line pt-5 font-mono text-[11px] leading-relaxed text-dim">
@@ -193,7 +193,7 @@ export function Architecture() {
             <Reveal delay={0.25}>
               <p className="mt-6 text-center text-[15px] text-mute">
                 <span className="font-semibold text-fog">devvmind builds the evidence &amp; context layer.</span>{" "}
-                <span className="font-semibold text-lime">Claude synthesizes that evidence into actionable engineering insight.</span>
+                <span className="font-semibold text-lime">The AI reasoning layer synthesizes that evidence into actionable engineering insight.</span>
               </p>
             </Reveal>
           </div>

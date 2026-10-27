@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Menu, Waypoints, X } from "lucide-react";
-import { GithubMark } from "./icons";
 import { cn } from "../utils/cn";
 
 const LINKS = [
   { label: "Product", href: "/#product" },
+  { label: "Modules", href: "/#modules" },
   { label: "How it works", href: "/#how-it-works" },
   { label: "Blast radius", href: "/#capabilities" },
   { label: "Architecture", href: "/#architecture" },
@@ -71,15 +71,6 @@ export function Nav({
         </div>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href="https://github.com/ayaeid225-dev/devmind"
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-2 rounded-md px-3 py-1.5 text-[13.5px] font-medium text-mute transition-colors hover:bg-panel-2 hover:text-fog"
-          >
-            <GithubMark className="h-[15px] w-[15px]" />
-            GitHub
-          </a>
           <a
             href="/early-access"
             onClick={handleEarlyAccess}

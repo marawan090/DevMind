@@ -1,5 +1,5 @@
 import { ArrowLeft, ArrowUpRight, CheckCircle2, Globe, Mail, ShieldCheck } from "lucide-react";
-import { GithubMark, LinkedinMark } from "./icons";
+import { LinkedinMark } from "./icons";
 import { Nav } from "./Nav";
 import { Footer } from "./Footer";
 import { Reveal, Eyebrow } from "./ui";
@@ -54,9 +54,9 @@ export function CompanyPage() {
             </Reveal>
             <Reveal delay={0.16}>
               <p className="mt-4 max-w-[62ch] text-[16px] leading-[1.7] text-mute sm:text-[17px]">
-                devvmind is a developer intelligence platform founded in 2026. It helps software
-                engineers understand repository structure, code relationships, Git history, and the
-                potential impact of changes before modifying or merging code.
+                devvmind is the trusted engineering intelligence layer for AI-written code founded in 2026.
+                It validates AI-generated code before it merges into production &mdash; combining repository
+                intelligence, static dependency mapping, and test gap detection.
               </p>
             </Reveal>
           </header>
@@ -70,7 +70,7 @@ export function CompanyPage() {
               <div className="rounded-xl border border-line bg-panel p-5">
                 <span className="font-mono text-[11px] uppercase tracking-wider text-dim block">Organization</span>
                 <span className="mt-2 block text-[17px] font-semibold text-fog">devvmind</span>
-                <span className="mt-1 block font-mono text-[11px] text-mute">Developer intelligence platform</span>
+                <span className="mt-1 block font-mono text-[11px] text-mute">Engineering intelligence platform</span>
               </div>
               <div className="rounded-xl border border-line bg-panel p-5">
                 <span className="font-mono text-[11px] uppercase tracking-wider text-dim block">Founded</span>
@@ -163,17 +163,17 @@ export function CompanyPage() {
             <Reveal>
               <div className="flex items-center gap-2.5">
                 <span aria-hidden="true" className="block h-1.5 w-1.5 bg-lime" />
-                <h2 className="label-mono text-mute">03 · Platform Architecture & AI Reality</h2>
+                <h2 className="label-mono text-mute">03 · Platform Architecture &amp; AI Reasoning</h2>
               </div>
               <p className="mt-3 text-[22px] font-semibold text-fog sm:text-[26px]">
-                Model-agnostic context built by devvmind.
+                Evidence-grounded engineering intelligence.
               </p>
             </Reveal>
 
             <div className="mt-8 grid gap-6 md:grid-cols-2">
               <div className="rounded-xl border border-line bg-panel p-6 sm:p-7">
                 <div className="flex items-center gap-2 font-mono text-[12px] uppercase tracking-wider text-lime">
-                  <CheckCircle2 className="h-4 w-4" /> Context & Retrieval Engine
+                  <CheckCircle2 className="h-4 w-4" /> Context &amp; Retrieval Engine
                 </div>
                 <h3 className="mt-3 text-[17px] font-semibold text-fog">
                   Deterministic Repository Intelligence
@@ -184,32 +184,32 @@ export function CompanyPage() {
                   before any code is merged.
                 </p>
                 <ul className="mt-4 space-y-2 font-mono text-[11.5px] text-mute">
-                  <li>• Static dependency & downstream blast-radius analysis</li>
-                  <li>• Git history, commit trails, and precedent pull requests</li>
-                  <li>• Relevant reviewer intelligence grounded in ownership</li>
+                  <li>• Static dependency &amp; downstream blast-radius analysis</li>
+                  <li>• Git history, precedent pull requests, and open-PR collisions</li>
+                  <li>• Test gap detection and reviewer intelligence</li>
                 </ul>
               </div>
 
               <div className="rounded-xl border border-line bg-panel p-6 sm:p-7">
                 <div className="flex items-center gap-2 font-mono text-[12px] uppercase tracking-wider text-lime">
-                  <ShieldCheck className="h-4 w-4 text-lime" /> Claude Integration &amp; Evaluation
+                  <ShieldCheck className="h-4 w-4 text-lime" /> AI Reasoning Layer
                 </div>
                 <h3 className="mt-3 text-[17px] font-semibold text-fog">
-                  Claude as a Core Reasoning Layer
+                  AI-Powered Code Validation
                 </h3>
                 <div className="mt-3 space-y-3 text-[13.5px] leading-[1.7] text-mute">
                   <p>
-                    devvmind has evaluated Claude alongside open-source reasoning models as part of its early product development. Claude produced particularly impressive results on the repository-scale reasoning and evidence-synthesis problems we are solving. That experience motivated the team to pursue deeper Claude integration across the platform&rsquo;s core intelligence workflows.
+                    devvmind combines deterministic repository intelligence with advanced AI reasoning. While generic AI coding tools focus exclusively on writing code faster, devvmind is dedicated to validating code before it reaches production.
                   </p>
                   <p>
-                    Our goal is not to replace devvmind&rsquo;s repository intelligence with a model. Instead, devvmind provides the structured evidence &mdash; retrieval, static analysis, dependencies, Git history, and repository context &mdash; while Claude serves as an increasingly important reasoning and synthesis layer.
+                    devvmind provides the structured evidence &mdash; static analysis, dependency graphs, commit history, and test gap mapping &mdash; while the AI reasoning layer synthesizes this context into actionable pull request assessments and merge recommendations.
                   </p>
                   <p className="text-fog font-medium">
-                    We are pursuing Claude Startups to expand and validate this integration at greater depth.
+                    We validate code; we do not generate it.
                   </p>
                 </div>
                 <div className="mt-5 rounded-md border border-lime/30 bg-lime/[0.06] p-3 font-mono text-[11px] text-fog">
-                  Status: Claude evaluation completed · Deeper intelligence integration in progress
+                  Status: All four modules operational · Engineering pilots in progress
                 </div>
               </div>
             </div>
@@ -227,7 +227,7 @@ export function CompanyPage() {
               </p>
             </Reveal>
 
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
               <div className="rounded-xl border border-line bg-panel p-6 sm:p-7">
                 <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-dim">
                   <Globe className="h-3.5 w-3.5 text-lime" /> Official Website
@@ -240,24 +240,6 @@ export function CompanyPage() {
                 </a>
                 <p className="mt-2 text-[13px] leading-relaxed text-mute">
                   Canonical web platform and interactive product presentation.
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-line bg-panel p-6 sm:p-7">
-                <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-dim">
-                  <GithubMark className="h-3.5 w-3.5 text-lime" /> Official GitHub
-                </div>
-                <a
-                  href="https://github.com/ayaeid225-dev/devmind"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-3 inline-flex items-center gap-1.5 font-mono text-[13px] font-semibold text-fog hover:text-lime"
-                >
-                  <span>ayaeid225-dev/devmind</span>
-                  <ArrowUpRight className="h-3 w-3 text-dim" />
-                </a>
-                <p className="mt-2 text-[13px] leading-relaxed text-mute">
-                  Official repository tracking platform development and architecture.
                 </p>
               </div>
 

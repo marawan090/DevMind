@@ -27,23 +27,23 @@ export function Hero({
           <Reveal>
             <div className="flex flex-wrap items-center gap-3">
               <span aria-hidden="true" className="block h-1.5 w-1.5 bg-lime" />
-              <span className="label-mono text-mute">Developer intelligence for modern codebases</span>
+              <span className="label-mono text-mute">Engineering intelligence for AI-written code</span>
               <span className="hidden font-mono text-[11px] text-dim sm:inline">·</span>
-              <span className="hidden font-mono text-[11px] text-dim sm:inline">Context by devvmind · Reasoning layer</span>
+              <span className="hidden font-mono text-[11px] text-dim sm:inline">Context by devvmind · AI reasoning layer</span>
             </div>
           </Reveal>
 
           <Reveal delay={0.1}>
             <h1 className="mt-6 max-w-[16ch] text-balance text-[42px] font-semibold leading-[1.06] tracking-[-0.025em] text-fog sm:text-[56px] md:text-[64px]">
-              Understand the codebase before you change it.
+              Validate AI-written code before it merges.
             </h1>
           </Reveal>
 
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-[54ch] text-[17px] leading-[1.7] text-mute sm:text-[18px]">
-              devvmind helps engineers understand repository structure, code relationships,
-              history, and the potential impact of changes — combining deep codebase context
-              with advanced model reasoning before modifying or merging code.
+              DevvMind is the trusted engineering intelligence layer for AI-written code.
+              It validates AI-generated code before it merges into production &mdash; helping engineering
+              teams catch hidden bugs, untraced dependencies, and test gaps.
             </p>
           </Reveal>
 
@@ -57,8 +57,8 @@ export function Hero({
                 Request Early Access
                 <ArrowRight className="h-4 w-4" />
               </PrimaryButton>
-              <SecondaryButton href="#product">
-                Explore devvmind
+              <SecondaryButton href="#modules">
+                Explore Modules
               </SecondaryButton>
               <SecondaryButton href="#how-it-works">
                 See How It Works
@@ -67,7 +67,7 @@ export function Hero({
             </div>
             <div className="mt-6 flex items-center gap-2.5 font-mono text-[12px] text-dim">
               <span className="h-1.5 w-1.5 rounded-full bg-lime" />
-              <span>Built with repository intelligence and AI reasoning &mdash; with Claude evaluated as a key reasoning layer.</span>
+              <span>Built with repository intelligence and AI reasoning.</span>
             </div>
           </Reveal>
         </div>
@@ -103,13 +103,13 @@ export function Hero({
                 <div className="max-w-[62ch]">
                   <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-lime mb-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-lime anim-pulse-dot" />
-                    Early Access Evaluation
+                    Engineering Pilots Active
                   </div>
                   <h3 className="text-[20px] font-semibold text-fog sm:text-[23px] tracking-[-0.01em]">
-                    Want to try devvmind on your codebase?
+                    Want to validate AI-written code on your codebase?
                   </h3>
                   <p className="mt-2 text-[14.5px] leading-relaxed text-mute">
-                    We're currently onboarding early users and evaluating devvmind across real-world repositories.
+                    We're starting pilots with engineering teams adopting AI coding tools to validate code before it merges into production.
                   </p>
                 </div>
                 <PrimaryButton

@@ -81,13 +81,13 @@ export function FinalCTA({
             <div className="relative px-6 py-16 sm:px-12 md:py-24 lg:px-16">
               <div className="flex items-center gap-3">
                 <span aria-hidden="true" className="block h-1.5 w-1.5 bg-lime" />
-                <span className="label-mono text-mute">Repository Intelligence</span>
+                <span className="label-mono text-mute">Engineering Intelligence</span>
               </div>
               <h2 className="mt-5 max-w-[20ch] text-balance text-[32px] font-semibold leading-[1.12] tracking-[-0.025em] text-fog sm:text-[42px]">
-                Understand your codebase before you change it.
+                Validate AI-written code before it merges.
               </h2>
               <p className="mt-5 max-w-[46ch] text-[15.5px] leading-[1.7] text-mute">
-                Explore how devvmind connects code, context, history, and reasoning.
+                Join engineering teams starting pilots with DevvMind to detect collisions, uncover test gaps, and validate pull requests with verifiable evidence.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <PrimaryButton
@@ -107,7 +107,7 @@ export function FinalCTA({
                 </a>
               </div>
               <p className="mt-6 font-mono text-[11px] text-dim">
-                Repository · Context · Reasoning Layer · Impact
+                Repository Intelligence · PR Governance · AI Reasoning · Evidence
               </p>
             </div>
           </div>

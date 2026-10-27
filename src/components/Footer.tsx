@@ -5,11 +5,12 @@ const COLS: { head: string; links: { label: string; href: string; external?: boo
     head: "Product",
     links: [
       { label: "Request early access", href: "/early-access" },
+      { label: "Four modules", href: "/#modules" },
       { label: "PR blast-radius analysis", href: "/#capabilities" },
       { label: "Historical context", href: "/#capabilities" },
       { label: "Reviewer intelligence", href: "/#capabilities" },
       { label: "Pipeline architecture", href: "/#architecture" },
-      { label: "Product status", href: "/#status" },
+      { label: "Product status & roadmap", href: "/#status" },
     ],
   },
   {
@@ -17,9 +18,10 @@ const COLS: { head: string; links: { label: string; href: string; external?: boo
     links: [
       { label: "Why we built devvmind", href: "/#why-we-built" },
       { label: "How it works", href: "/#how-it-works" },
+      { label: "Who it's for", href: "/#who-its-for" },
+      { label: "How we're different", href: "/#differentiation" },
       { label: "Company overview", href: "/company" },
       { label: "About & Founders", href: "/#about" },
-      { label: "GitHub", href: "https://github.com/ayaeid225-dev/devmind", external: true },
       { label: "LinkedIn", href: "https://www.linkedin.com/company/devmindorg/", external: true },
     ],
   },
@@ -33,7 +35,7 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-3 text-[14px] font-medium text-fog">
-              Developer Intelligence for modern codebases.
+              The trusted engineering intelligence layer for AI-written code.
             </p>
             <p className="mt-1 font-mono text-[11px] text-dim">
               Founded 2026 · Egypt
@@ -73,17 +75,6 @@ export function Footer() {
                   className="text-mute hover:text-lime transition-colors underline decoration-line-2 underline-offset-4 hover:decoration-lime"
                 >
                   marawan@devvmind.me
-                </a>
-              </div>
-              <div>
-                <span className="text-dim">GitHub: </span>
-                <a
-                  href="https://github.com/ayaeid225-dev/devmind"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-mute hover:text-lime transition-colors underline decoration-line-2 underline-offset-4 hover:decoration-lime"
-                >
-                  GitHub
                 </a>
               </div>
               <div>
